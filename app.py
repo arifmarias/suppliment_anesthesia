@@ -2,10 +2,10 @@ import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
 from datetime import datetime
 import calendar
+# import database as db
 
 # -------------- SETTINGS --------------
-currency = "৳"
-page_title = "Prediction of Suppliment anesthesia"
+page_title = "Suppliment Anesthesia Prediction"
 page_icon = "🦷"  # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 layout = "centered"
 # --------------------------------------
@@ -82,28 +82,36 @@ with st.form("entry_form", clear_on_submit=True):
         with st.expander("Patient Information"):
               patient_name = st.text_input("Name of the Patient")
               reg_no = st.text_input("Registration No.")
-              gender = st.radio("Gender", options=("Male","Female"), horizontal=True)
-              age_3 = st.slider('Age', 0, 100,step=1)
+              Patient_Gender = st.radio("Gender", options=("Male","Female"), horizontal=True)
+              Patient_Age = st.slider('Age', 0, 100,step=1)
         with st.expander("Dental Related Info"):
-            pre_dental_7 =st.radio("Previous Dental Treatment", options=("Yes","No"), horizontal=True)
-            pulp_1 = st.radio("Pulp Stone or Calcification", options=("Yes","No"), horizontal=True)
-            curv_canal_8 =st.radio("Curved Canal", options=("Yes","No"), horizontal=True)
-            mobility_12 = st.radio("Mobility", options=("Yes","No"), horizontal=True)
-            medical_hist_13 = st.radio("Medical History", options=("No","Yes"), horizontal=True)
-            periodontal_ligament_17 = st.radio("Periodontal Ligament Involvement", options=("Yes","No"), horizontal=True)
-            palpation_5 = st.radio("Palpation", options=("Positive","Negative"), horizontal=True)
-            lamina_dura = st.radio("Lamina Dura", options=("Loss","Intact"), horizontal=True)
-            percussion_test_4 = st.radio("Percission Test",("Positive +", "Positive ++", "Negative"), horizontal=True)
-            pain_duration_2 = st.number_input("Pain Duration (in Days)",format='%0.0f')
-            e_pulp_test_duration_6 = st.number_input("Electrical Pulp Test Response's Duration (in seconds)",format='%0.0f')
-            elec_current_pass_14 = st.number_input("Electric Pulp Test's Current Pass (in Unit)",format='%0.0f')
-            cold_pain_duration_9 = st.number_input("Cold Test Pain Duration (in seconds)",format='%0.0f')
-            cold_test_vas_10 = st.slider('Cold Test (VAS) score', 0, 10,step=1)
-            clinical_test_vas_11 = st.slider('Clinical Test (VAS) score', 0, 10,step=1)
-            elec_pass_vas_15 = st.slider('Electric Pulp Test (VAS) response score', 0, 10,step=1)
+            Dental_History =st.radio("Previous Dental Treatment", options=("Yes","No"), horizontal=True)
+            Pulp_Stone_or_Calcification = st.radio("Pulp Stone or Calcification", options=("Yes","No"), horizontal=True)
+            Curved_Canal =st.radio("Curved Canal", options=("Yes","No"), horizontal=True)
+            Mobility = st.radio("Mobility", options=("Yes","No"), horizontal=True)
+            Medical_History = st.radio("Medical History", options=["Yes","No"], index =1, horizontal=True)
+            PDL_Ligament_involvement = st.radio("Periodontal Ligament Involvement", options=("Yes","No"), horizontal=True)
+            Palpation = st.radio("Palpation", options=("Positive","Negative"), horizontal=True)
+            Lamina_Dura = st.radio("Lamina Dura", options=("Loss","Intact"), horizontal=True)
+            Percussion_Test = st.radio("Percission Test",("Positive +", "Positive ++", "Negative"), horizontal=True)
+            Pain_Duration_Days = st.number_input("Pain Duration (in Days)",format='%0.0f')
+            EPT_duration_before_anaesthesia_seconds = st.number_input("Electrical Pulp Test Response's Duration (in seconds)",format='%0.0f')
+            EPT_current_pass = st.number_input("Electric Pulp Test's Current Pass (in Unit)",format='%0.0f')
+            Cold_Test_Pain_Duration_before_anaesthesia_seconds = st.number_input("Cold Test Pain Duration (in seconds)",format='%0.0f')
+            st.image("http://www.wikidoc.org/images/e/eb/Pain_scale.jpg",width=250)
+            Cold_test_VAS_Score_Before_anaesthesia = st.slider('Cold Test (VAS) score', 0, 10,step=1)
+            Clinical_Pain_VAS_Score = st.slider('Clinical Test (VAS) score', 0, 10,step=1)
+            EPT_VAS_before_anaesthesia = st.slider('Electric Pulp Test (VAS) response score', 0, 10,step=1)
             periodontal_space_16 = st.multiselect('Periodontal Space', ("MB","DB","ML","DL"))
             local_Anesthetic = st.text_input("Local Anesthetic Procedure's Name")
             comment = st.text_area("Any Other Comment", placeholder="Enter a comment here ...")
         
         "---"
         submitted = st.form_submit_button("Submit Data")
+
+# if submitted:
+#         input_date = str(day) + "/" + str(month) + "/" +str(year)
+#         year_month = str(year) + "_" + str(month)
+#         period = str(year)
+#         db.insert_period(str(datetime.utcnow()), input_date, period, year_month,invest_area, invest_amount, comment)
+#         st.success("Data saved!")
