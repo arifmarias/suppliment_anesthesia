@@ -135,7 +135,9 @@ if submitted:
       # st.dataframe(df)
       saved_final_rf = load_model('Final_ET_Model_12June2023')
       new_prediction = predict_model(saved_final_rf, data=df)
+      #st.dataframe(new_prediction)
       st.write("Supplement Necessity Prediction: ", new_prediction['prediction_label'][0])
+      st.write("Prediction Probability Score: ", new_prediction['prediction_score'][0])
       
 
       
