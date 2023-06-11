@@ -3,6 +3,7 @@ from streamlit_option_menu import option_menu  # pip install streamlit-option-me
 from datetime import datetime
 import calendar
 import pandas as pd
+from pycaret.classification import *
 # import database as db
 
 # -------------- SETTINGS --------------
@@ -105,8 +106,13 @@ with st.form("entry_form", clear_on_submit=True):
             Clinical_Pain_VAS_Score = st.slider('Clinical Test (VAS) score', 0, 10,step=1)
             EPT_VAS_before_anaesthesia = st.slider('Electric Pulp Test (VAS) response score', 0, 10,step=1)
             
-            local_Anesthetic = st.text_input("Local Anesthetic Procedure's Name")
+            local_Anesthetic = st.selectbox("Type of Anaesthesia Provided",("ASANB","IANB+IN","IANB+LB","INCISIVE NB",
+                                                                                 "Mental NB","MSAN","MSAN+ PSAN","PSAN","PSAN+MSAN"))
             comment = st.text_area("Any Other Comment", placeholder="Enter a comment here ...")
+            if (local_Anesthetic == "IANB+IN") or (local_Anesthetic == "INCISIVE NB") or (local_Anesthetic == "Mental NB") or (local_Anesthetic == "IANB+LB"):
+                  local_Anesthetic = "Mandible"
+            else:
+                  local_Anesthetic = "Maxilla"
         
         "---"
         data = [[Patient_Gender,Patient_Age,Pulp_Stone_or_Calcification,
@@ -114,21 +120,22 @@ with st.form("entry_form", clear_on_submit=True):
                  Dental_History,Curved_Canal,Cold_Test_Pain_Duration_before_anaesthesia_seconds,
                  Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,
                  EPT_current_pass,EPT_VAS_before_anaesthesia,periodontal_space,PDL_Ligament_involvement,
-                 Lamina_Dura]]          
+                 Lamina_Dura,local_Anesthetic]]          
         df = pd.DataFrame(data,columns=['Patient_Gender','Patient_Age','Pulp_Stone_or_Calcification','Pain_Duration_Days'
                                         ,'Percussion_Test','Palpation','EPT_duration_before_anaesthesia_seconds'
                                         ,'Dental_History','Curved_Canal','Cold_Test_Pain_Duration_before_anaesthesia_seconds'
                                         ,'Cold_test_VAS_Score_Before_anaesthesia','Clinical_Pain_VAS_Score','Mobility'
                                         ,'Medical_History','EPT_current_pass','EPT_VAS_before_anaesthesia','PDL_Space'
-                                        ,'PDL_Ligament_involvement','Lamina_Dura'])
+                                        ,'PDL_Ligament_involvement','Lamina_Dura','local_Anesthetic'])
         submitted = st.form_submit_button("Submit Data")
 
 if submitted:
       
       st.dataframe(df)
+      saved_final_rf = load_model('Final_ET_Model_12June2023')
+      new_prediction = predict_model(saved_final_rf, data=df)
+      st.write("`Supplement Necessity Prediction:` ", new_prediction['prediction_label'][0])
       
-        # input_date = str(day) + "/" + str(month) + "/" +str(year)
-        # year_month = str(year) + "_" + str(month)
-        # period = str(year)
-        # db.insert_period(str(datetime.utcnow()), input_date, period, year_month,invest_area, invest_amount, comment)
-        # st.success("Data saved!")
+
+      
+       
