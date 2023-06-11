@@ -138,7 +138,7 @@ if submitted:
       #st.dataframe(new_prediction)
       st.write("#### Supplement Necessity Prediction: ", new_prediction['prediction_label'][0])
       st.write("#### Prediction Probability Score: ", new_prediction['prediction_score'][0])
-      
+      # dashboard(saved_final_rf)
 
       
        
