@@ -13,7 +13,7 @@ layout = "centered"
 # --------------------------------------
 # --------------------------------------
 st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
-st.title(page_title + " " + page_icon)
+st.header(page_title + " " + page_icon)
 
 customized_button = st.markdown("""
     <style >
@@ -71,6 +71,7 @@ div[class*="stNumberInput"] label p {
 </style>
 """
 st.write(tabs_font_css, unsafe_allow_html=True)
+st.write("Idea and Implementation: :blue[Dr. Md Abu Saeed Ibn Harun], Mohammed Arif")
 st.markdown("""---""")
 # --- DROP DOWN VALUES FOR SELECTING THE PERIOD ---
 years = [datetime.today().year, datetime.today().year + 1]
@@ -131,7 +132,7 @@ with st.form("entry_form", clear_on_submit=True):
 
 if submitted:
       
-      st.dataframe(df)
+      # st.dataframe(df)
       saved_final_rf = load_model('Final_ET_Model_12June2023')
       new_prediction = predict_model(saved_final_rf, data=df)
       st.write("`Supplement Necessity Prediction:` ", new_prediction['prediction_label'][0])
