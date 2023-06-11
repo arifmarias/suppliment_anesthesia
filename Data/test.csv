@@ -1,5 +1,7 @@
-Patient_Gender,Patient_Age,Pulp_Stone_or_Calcification,Pain_Duration_Days,Percussion_Test,Palpation,EPT_duration_before_anaesthesia_seconds,Dental_History,Cold_Test_Pain_Duration_before_anaesthesia_seconds,Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,EPT_current_pass,EPT_VAS_before_anaesthesia,PDL_Space,PDL_Ligament_involvement,Lamina_Dura
-F,37,No,30,Positive ++,Negative,5,No,0,0,6,No,0,32,5,1,Yes,Loss
-F,47,No,30,Negative,Negative,3,No,3,3,2,No,0,80,0,0,No,Intact
-F,45,No,65,Positive ++,Negative,11,Yes,20,5,7,Yes,HTN,52,3,1,Yes,Loss
-M,33,Yes,30,Negative,Negative,13,No,23,8,7,No,0,50,5,0,No,Intact
+Patient_Gender,Patient_Age,Pulp_Stone_or_Calcification,Pain_Duration_Days,Percussion_Test,Palpation,EPT_duration_before_anaesthesia_seconds,Dental_History,Curved_Canal,Cold_Test_Pain_Duration_before_anaesthesia_seconds,Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,EPT_current_pass,EPT_VAS_before_anaesthesia,PDL_Space,PDL_Ligament_involvement,Lamina_Dura
+F,37,No,30,Positive,Negative,5,No,Yes,0,0,6,No,No,32,5,Yes,Yes,Loss
+F,47,No,30,Negative,Negative,3,No,No,3,3,2,No,No,80,0,No,No,Intact
+F,27,No,7,Negative,Negative,19,No,No,23,7,6,No,No,27,5,No,No,Intact
+M,27,No,7,Negative,Negative,37,No,No,27,7,6,No,No,21,5,No,No,Intact
+M,23,No,60,Positive,Negative,5,No,Yes,12,5,4,No,No,43,2,Yes,No,Intact
+F,34,Yes,2,Negative,Negative,27,No,Yes,13,7,9,No,No,47,5,No,No,Intact

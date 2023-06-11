@@ -1,128 +1,128 @@
 ﻿Patient_Gender,Patient_Age,Pulp_Stone_or_Calcification,Pain_Duration_Days,Percussion_Test,Palpation,EPT_duration_before_anaesthesia_seconds,Dental_History,Curved_Canal,Cold_Test_Pain_Duration_before_anaesthesia_seconds,Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,EPT_current_pass,EPT_VAS_before_anaesthesia,PDL_Space,PDL_Ligament_involvement,Lamina_Dura,Need_Suppliment
-F,37,No,30,Positive ++,Negative,5,No,Yes,0,0,6,No,0,32,5,1,Yes,Loss,Yes
-F,47,No,30,Negative,Negative,3,No,No,3,3,2,No,0,80,0,0,No,Intact,Yes
-F,27,No,7,Negative,Negative,19,No,No,23,7,6,No,0,27,5,0,No,Intact,Yes
-M,27,No,7,Negative,Negative,37,No,No,27,7,6,No,0,21,5,0,No,Intact,Yes
-M,23,No,60,Positive +,Negative,5,No,Yes,12,5,4,No,0,43,2,1,No,Intact,Yes
-F,34,Yes,2,Negative,Negative,27,No,Yes,13,7,9,No,0,47,5,0,No,Intact,Yes
-F,29,No,10,Positive ++,Negative,12,No,Yes,23,8,7,No,0,40,5,0,No,Intact,Yes
-F,33,Yes,7,Negative,Negative,13,No,No,23,8,7,No,0,47,5,0,No,Intact,Yes
-M,32,No,30,Positive +,Negative,15,No,Yes,27,8,7,No,0,42,5,0,No,Intact,Yes
-F,32,No,30,Negative,Negative,15,No,No,27,8,7,No,0,42,5,0,No,Intact,Yes
-M,57,Yes,30,Positive ++,Negative,13,Yes,No,21,6,6,No,"HTN, CARD",50,6,0,No,Intact,Yes
-M,57,No,30,Positive ++,Negative,13,Yes,Yes,19,6,6,No,"HTN, CARD",50,4,1,No,Loss,Yes
-M,25,No,2,Positive ++,Negative,4,No,No,7,8,6,Yes,0,15,7,1,No,Intact,Yes
-M,32,No,5,Negative,Negative,2,No,No,10,5,5,No,0,34,3,0,No,Intact,Yes
-F,35,Yes,3,Positive ++,Negative,5,No,Yes,12,5,6,No,0,53,3,1,No,Loss,Yes
-F,36,No,3,Negative,Negative,5,No,No,7,8,7,Yes,0,23,7,0,No,Intact,Yes
-M,21,No,7,Positive ++,Positive,10,Yes,Yes,30,10,6,Yes,0,14,7,0,No,Intact,Yes
-F,29,No,4,Positive ++,Positive,13,No,Yes,27,10,7,No,0,15,8,0,No,Intact,Yes
-F,42,Yes,2,Positive +,Negative,24,No,Yes,40,7,7,No,0,35,5,0,No,Intact,Yes
-M,23,No,1,Negative,Negative,5,No,Yes,10,8,8,No,0,40,7,0,No,Intact,Yes
-M,32,No,1,Negative,Negative,7,Yes,Yes,12,10,10,No,0,40,6,0,No,Intact,Yes
-F,30,Yes,30,Positive ++,Positive,13,No,Yes,20,5,5,Yes,0,40,3,1,Yes,Loss,Yes
-M,16,No,60,Positive +,Negative,4,No,No,7,8,3,No,0,45,5,0,No,Intact,Yes
-M,19,No,30,Positive +,Negative,10,No,Yes,10,10,4,No,0,40,7,0,No,Intact,Yes
-M,36,No,30,Negative,Negative,7,No,No,12,10,5,No,0,27,7,0,No,Intact,Yes
-M,20,No,30,Negative,Negative,3,No,No,10,6,5,No,0,40,3,0,No,Intact,Yes
-M,21,No,4,Negative,Negative,2,Yes,No,10,5,5,No,0,27,10,0,No,Intact,Yes
-F,16,No,12,Positive +,Negative,5,No,No,9,7,6,No,0,17,6,0,No,Intact,Yes
-M,21,No,30,Negative,Negative,3,No,No,7,7,5,No,0,41,3,0,No,Intact,Yes
-M,29,Yes,4,Positive +,Negative,0,No,Yes,23,7,7,No,0,80,0,1,No,Loss,Yes
-F,33,No,30,Positive ++,Negative,5,No,Yes,0,0,6,No,0,37,5,1,Yes,Loss,Yes
-F,28,No,3,Positive ++,Positive,10,No,Yes,23,10,10,No,0,13,5,0,No,Intact,Yes
-M,58,Yes,30,Positive ++,Negative,13,No,No,22,6,7,No,"HTN, CARD",47,6,0,No,Intact,Yes
-F,45,Yes,3,Negative,Negative,5,No,No,17,5,6,No,DM,23,2,0,No,Intact,Yes
-M,27,No,1,Positive ++,Positive,7,No,No,13,10,9,No,0,13,7,0,No,Intact,Yes
-F,39,Yes,60,Positive +,Negative,7,No,No,15,6,6,No,DM,50,6,0,No,Intact,Yes
-F,39,No,60,Positive +,Negative,5,No,No,19,6,6,No,DM,40,5,0,No,Intact,Yes
-M,32,Yes,10,Positive ++,Positive,13,Yes,Yes,17,4,10,No,0,40,5,0,No,Intact,Yes
-F,40,Yes,7,Positive ++,Positive,17,Yes,No,13,3,8,No,DM,42,5,0,No,Intact,Yes
-F,33,No,3,Negative,Negative,19,No,No,19,8,7,No,0,17,5,0,No,Intact,Yes
-F,43,No,7,Negative,Negative,21,No,No,27,7,6,No,0,19,5,0,No,Intact,Yes
-M,54,Yes,210,Positive ++,Negative,7,Yes,No,20,7,6,Yes,DM,50,7,1,Yes,Loss,Yes
-F,47,Yes,120,Positive ++,Negative,0,No,No,17,3,7,Yes,DM,80,0,0,Yes,Intact,Yes
-M,55,Yes,210,Positive ++,Negative,7,Yes,No,23,7,6,Yes,DM,50,7,1,Yes,Loss,Yes
-M,50,No,7,Positive ++,Negative,2,Yes,No,13,5,7,No,"DM, HTN",47,3,0,No,Intact,Yes
-F,27,No,1,Positive ++,Positive,17,No,No,30,10,10,Yes,0,11,7,0,No,Intact,Yes
-F,45,No,65,Positive ++,Negative,11,Yes,No,20,5,7,Yes,HTN,52,3,1,Yes,Loss,Yes
-M,33,Yes,30,Negative,Negative,13,No,No,23,8,7,No,0,50,5,0,No,Intact,Yes
-F,55,Yes,30,Positive ++,Negative,7,No,No,17,5,6,Yes,0,47,4,0,Yes,Intact,Yes
-F,48,No,90,Negative,Negative,8,Yes,No,11,7,6,No,0,17,5,0,No,Intact,Yes
-M,41,No,25,Positive ++,Negative,15,No,No,17,5,5,No,0,40,5,0,No,Intact,Yes
-M,32,No,2,Positive ++,Positive,5,No,No,17,8,8,No,0,7,5,0,No,Intact,Yes
-F,54,Yes,210,Positive ++,Negative,11,Yes,No,23,7,5,Yes,DM,40,7,1,Yes,Loss,Yes
-F,54,Yes,210,Positive ++,Negative,13,Yes,No,21,7,5,Yes,DM,50,7,1,Yes,Loss,Yes
-M,46,No,30,Negative,Negative,7,No,No,10,8,6,No,HTN,30,6,0,No,Intact,Yes
-M,26,No,2,Positive ++,Negative,11,No,No,18,7,8,No,0,16,6,0,No,Intact,Yes
-F,33,No,7,Negative,Negative,10,No,No,19,8,7,No,0,21,5,0,No,Intact,Yes
-F,43,No,7,Negative,Negative,11,No,No,27,7,6,No,0,19,5,0,No,Intact,Yes
-M,31,No,1,Positive ++,Positive,8,No,No,21,10,10,Yes,0,19,7,0,No,Intact,Yes
-F,55,Yes,210,Positive ++,Positive,5,Yes,No,23,7,6,Yes,DM,50,7,1,Yes,Loss,Yes
-F,55,Yes,180,Positive ++,Positive,5,No,No,19,10,8,Yes,DM,43,7,1,Yes,Loss,Yes
-M,57,Yes,150,Positive ++,Positive,7,No,No,17,5,7,No,HTN,57,3,1,Yes,Loss,Yes
-F,29,Yes,2,Positive ++,Positive,13,No,No,13,6,8,No,0,40,5,0,No,Intact,Yes
-M,55,Yes,60,Positive ++,Positive,8,No,No,22,10,8,No,"DM, HTN",40,7,1,Yes,Loss,Yes
-F,47,Yes,7,Positive ++,Positive,8,Yes,No,20,8,8,Yes,DM,40,7,1,Yes,Loss,Yes
-M,50,Yes,30,Negative,Negative,5,No,No,10,10,6,No,HTN,30,5,0,No,Intact,Yes
-M,52,Yes,7,Positive ++,Positive,5,Yes,No,20,7,10,No,HTN,25,5,1,No,Loss,Yes
-M,55,Yes,210,Positive ++,Negative,11,Yes,No,23,7,5,Yes,DM,44,7,1,Yes,Loss,Yes
-F,59,Yes,180,Positive ++,Positive,7,No,No,20,10,8,Yes,"DM, HTN",39,7,1,Yes,Loss,Yes
-M,27,No,1,Positive ++,Positive,3,No,Yes,7,5,10,No,0,23,5,0,No,Intact,Yes
-M,52,No,30,Positive ++,Positive,7,No,No,20,7,5,No,"HTN, DM",52,5,1,Yes,Loss,Yes
-M,23,Yes,3,Positive ++,Positive,17,Yes,No,25,10,10,Yes,0,33,7,0,Yes,Intact,Yes
-F,23,Yes,5,Positive +,Positive,30,No,No,6,7,8,No,0,24,8,0,No,Intact,Yes
-F,54,No,1,Positive ++,Positive,17,No,No,26,5,9,Yes,HTN,54,4,1,Yes,Loss,Yes
-F,26,No,2,Positive ++,Positive,15,No,Yes,22,10,8,Yes,0,10,7,1,No,Intact,Yes
-F,58,Yes,60,Positive ++,Positive,15,Yes,Yes,22,7,8,Yes,0,43,5,1,Yes,Loss,Yes
-M,60,Yes,90,Positive ++,Negative,12,No,Yes,27,7,6,Yes,"DM, HTN, CAD",40,7,1,Yes,Loss,Yes
-M,68,Yes,60,Negative,Negative,11,Yes,No,22,8,5,No,DM,72,3,1,No,Intact,Yes
-M,58,Yes,2,Negative,Negative,8,No,No,10,7,6,No,CARD,34,7,0,No,Intact,Yes
-M,55,Yes,60,Positive ++,Positive,8,No,Yes,22,10,8,Yes,"DM, HTN",37,7,1,Yes,Loss,Yes
-M,30,Yes,7,Positive ++,Positive,17,Yes,No,21,3,10,No,0,43,5,0,No,Intact,Yes
-M,57,Yes,30,Positive ++,Negative,17,Yes,Yes,23,7,6,No,"HTN, CARD",43,6,1,Yes,Loss,Yes
-M,25,No,3,Positive ++,Positive,15,Yes,Yes,22,10,8,No,0,24,7,0,No,Intact,Yes
-F,23,Yes,120,Positive +,Positive,2,No,No,7,8,8,Yes,0,14,8,0,No,Intact,Yes
-M,30,No,7,Positive ++,Negative,12,No,Yes,21,8,8,No,0,31,5,1,Yes,Loss,No
-F,29,No,10,Positive ++,Negative,12,No,Yes,21,8,7,No,0,35,5,1,Yes,Loss,No
-M,27,No,2,Positive ++,Negative,13,No,Yes,17,7,7,No,0,16,5,0,No,Intact,No
-M,27,No,7,Negative,Negative,10,No,No,10,8,6,No,0,20,5,0,No,Intact,No
-M,44,No,7,Positive ++,Negative,3,No,No,17,5,8,No,"HT0, DM",33,2,1,Yes,Loss,No
-F,45,Yes,3,Negative,Negative,5,No,Yes,17,5,5,No,DM,22,2,1,Yes,Loss,No
-F,47,No,7,Positive ++,Positive,15,Yes,No,30,6,9,No,0,52,3,1,Yes,Loss,No
-F,42,No,3,Positive ++,Positive,2,No,No,0,0,9,No,HT0,52,2,1,Yes,Loss,No
-M,39,No,2,Positive ++,Positive,0,No,No,0,0,10,Yes,DM,80,0,1,Yes,Loss,No
-F,39,No,3,Positive ++,Negative,11,Yes,No,29,10,7,Yes,0,27,7,0,No,Intact,No
-F,29,No,30,Positive ++,Negative,11,No,No,27,8,8,No,0,50,5,0,No,Intact,No
-M,31,No,30,Positive +,Negative,7,No,No,17,5,6,No,0,51,5,0,No,Intact,No
-M,39,No,30,Positive ++,Negative,20,No,Yes,0,0,5,No,0,52,5,1,No,Loss,No
-M,28,No,7,Negative,Negative,7,No,No,10,8,6,No,0,11,5,0,No,Intact,No
-F,16,No,4,Negative,Negative,1,No,No,6,5,5,No,0,13,5,0,No,Intact,No
-F,36,No,30,Positive ++,Positive,0,Yes,Yes,50,10,8,Yes,CARD,0,0,1,No,Loss,No
-M,37,No,3,Negative,Negative,3,No,No,13,10,5,No,0,23,6,0,No,Intact,No
-F,27,No,90,Positive ++,Negative,2,No,Yes,22,4,5,Yes,0,43,2,1,Yes,Loss,No
-M,23,No,5,Positive ++,Negative,0,No,No,0,0,7,No,0,0,0,0,Yes,Intact,No
-M,24,No,2,Negative,Negative,2,No,No,7,5,6,No,0,32,3,0,No,Intact,No
-F,40,No,2,Negative,Negative,3,No,No,7,5,5,No,0,14,3,0,No,Intact,No
-M,22,No,30,Positive +,Negative,1,No,Yes,7,7,6,No,0,10,5,1,Yes,Intact,No
-F,23,No,3,Positive ++,Positive,10,No,Yes,22,8,8,Yes,0,41,7,1,Yes,Loss,No
-F,35,No,30,Negative,Negative,3,No,No,3,3,2,No,0,16,2,0,No,Intact,No
-M,41,Yes,0,Negative,Negative,17,No,No,0,0,5,No,0,50,5,0,No,Intact,No
-F,22,No,2,Positive +,Negative,5,No,No,9,8,5,No,0,13,6,0,No,Intact,No
-M,45,No,7,Positive ++,Negative,3,No,No,17,5,8,No,HTN,24,2,1,Yes,Intact,No
-M,26,No,2,Positive ++,Negative,13,No,No,17,7,7,No,0,16,5,0,No,Intact,No
-M,23,No,2,Negative,Negative,3,No,No,7,7,5,No,0,13,7,0,No,Intact,No
-M,29,No,7,Positive ++,Positive,2,No,No,0,0,3,Yes,0,65,2,1,Yes,Loss,No
-F,32,No,30,Positive +,Negative,5,No,No,20,7,8,No,0,50,5,0,No,Intact,No
-F,22,No,14,Positive +,Negative,10,No,No,20,5,6,No,0,42,2,0,No,Intact,No
-F,40,No,5,Negative,Negative,3,Yes,No,7,5,1,No,0,15,3,0,No,Intact,No
-M,38,No,1,Positive ++,Positive,2,Yes,No,5,3,10,No,0,52,2,1,Yes,Loss,No
-M,32,No,3,Negative,Negative,4,No,No,7,7,6,No,0,11,7,0,No,Intact,No
-M,33,No,7,Negative,Negative,3,No,No,10,7,4,No,0,17,5,0,No,Intact,No
-F,25,No,3,Positive ++,Negative,4,No,No,7,8,6,No,0,10,7,0,No,Intact,No
-F,26,No,2,Negative,Negative,3,No,No,7,7,5,No,0,10,7,0,No,Intact,No
-F,23,No,3,Negative,Negative,7,No,No,11,8,6,No,0,21,7,0,No,Intact,No
-M,25,No,2,Negative,Negative,7,No,No,13,8,6,No,0,19,7,0,No,Intact,No
-F,32,No,3,Negative,Negative,4,No,No,7,7,5,No,0,16,7,0,No,Intact,No
-F,33,No,7,Negative,Negative,10,No,No,19,8,7,No,0,21,5,0,No,Intact,No
-F,43,No,7,Negative,Negative,11,No,No,27,7,6,No,0,19,5,0,No,Intact,No
+F,37,No,30,Positive,Negative,5,No,Yes,0,0,6,No,No,32,5,Yes,Yes,Loss,Yes
+F,47,No,30,Negative,Negative,3,No,No,3,3,2,No,No,80,0,No,No,Intact,Yes
+F,27,No,7,Negative,Negative,19,No,No,23,7,6,No,No,27,5,No,No,Intact,Yes
+M,27,No,7,Negative,Negative,37,No,No,27,7,6,No,No,21,5,No,No,Intact,Yes
+M,23,No,60,Positive,Negative,5,No,Yes,12,5,4,No,No,43,2,Yes,No,Intact,Yes
+F,34,Yes,2,Negative,Negative,27,No,Yes,13,7,9,No,No,47,5,No,No,Intact,Yes
+F,29,No,10,Positive,Negative,12,No,Yes,23,8,7,No,No,40,5,No,No,Intact,Yes
+F,33,Yes,7,Negative,Negative,13,No,No,23,8,7,No,No,47,5,No,No,Intact,Yes
+M,32,No,30,Positive,Negative,15,No,Yes,27,8,7,No,No,42,5,No,No,Intact,Yes
+F,32,No,30,Negative,Negative,15,No,No,27,8,7,No,No,42,5,No,No,Intact,Yes
+M,57,Yes,30,Positive,Negative,13,Yes,No,21,6,6,No,Yes,50,6,No,No,Intact,Yes
+M,57,No,30,Positive,Negative,13,Yes,Yes,19,6,6,No,Yes,50,4,Yes,No,Loss,Yes
+M,25,No,2,Positive,Negative,4,No,No,7,8,6,Yes,No,15,7,Yes,No,Intact,Yes
+M,32,No,5,Negative,Negative,2,No,No,10,5,5,No,No,34,3,No,No,Intact,Yes
+F,35,Yes,3,Positive,Negative,5,No,Yes,12,5,6,No,No,53,3,Yes,No,Loss,Yes
+F,36,No,3,Negative,Negative,5,No,No,7,8,7,Yes,No,23,7,No,No,Intact,Yes
+M,21,No,7,Positive,Positive,10,Yes,Yes,30,10,6,Yes,No,14,7,No,No,Intact,Yes
+F,29,No,4,Positive,Positive,13,No,Yes,27,10,7,No,No,15,8,No,No,Intact,Yes
+F,42,Yes,2,Positive,Negative,24,No,Yes,40,7,7,No,No,35,5,No,No,Intact,Yes
+M,23,No,1,Negative,Negative,5,No,Yes,10,8,8,No,No,40,7,No,No,Intact,Yes
+M,32,No,1,Negative,Negative,7,Yes,Yes,12,10,10,No,No,40,6,No,No,Intact,Yes
+F,30,Yes,30,Positive,Positive,13,No,Yes,20,5,5,Yes,No,40,3,Yes,Yes,Loss,Yes
+M,16,No,60,Positive,Negative,4,No,No,7,8,3,No,No,45,5,No,No,Intact,Yes
+M,19,No,30,Positive,Negative,10,No,Yes,10,10,4,No,No,40,7,No,No,Intact,Yes
+M,36,No,30,Negative,Negative,7,No,No,12,10,5,No,No,27,7,No,No,Intact,Yes
+M,20,No,30,Negative,Negative,3,No,No,10,6,5,No,No,40,3,No,No,Intact,Yes
+M,21,No,4,Negative,Negative,2,Yes,No,10,5,5,No,No,27,10,No,No,Intact,Yes
+F,16,No,12,Positive,Negative,5,No,No,9,7,6,No,No,17,6,No,No,Intact,Yes
+M,21,No,30,Negative,Negative,3,No,No,7,7,5,No,No,41,3,No,No,Intact,Yes
+M,29,Yes,4,Positive,Negative,0,No,Yes,23,7,7,No,No,80,0,Yes,No,Loss,Yes
+F,33,No,30,Positive,Negative,5,No,Yes,0,0,6,No,No,37,5,Yes,Yes,Loss,Yes
+F,28,No,3,Positive,Positive,10,No,Yes,23,10,10,No,No,13,5,No,No,Intact,Yes
+M,58,Yes,30,Positive,Negative,13,No,No,22,6,7,No,Yes,47,6,No,No,Intact,Yes
+F,45,Yes,3,Negative,Negative,5,No,No,17,5,6,No,Yes,23,2,No,No,Intact,Yes
+M,27,No,1,Positive,Positive,7,No,No,13,10,9,No,No,13,7,No,No,Intact,Yes
+F,39,Yes,60,Positive,Negative,7,No,No,15,6,6,No,Yes,50,6,No,No,Intact,Yes
+F,39,No,60,Positive,Negative,5,No,No,19,6,6,No,Yes,40,5,No,No,Intact,Yes
+M,32,Yes,10,Positive,Positive,13,Yes,Yes,17,4,10,No,No,40,5,No,No,Intact,Yes
+F,40,Yes,7,Positive,Positive,17,Yes,No,13,3,8,No,Yes,42,5,No,No,Intact,Yes
+F,33,No,3,Negative,Negative,19,No,No,19,8,7,No,No,17,5,No,No,Intact,Yes
+F,43,No,7,Negative,Negative,21,No,No,27,7,6,No,No,19,5,No,No,Intact,Yes
+M,54,Yes,210,Positive,Negative,7,Yes,No,20,7,6,Yes,Yes,50,7,Yes,Yes,Loss,Yes
+F,47,Yes,120,Positive,Negative,0,No,No,17,3,7,Yes,Yes,80,0,No,Yes,Intact,Yes
+M,55,Yes,210,Positive,Negative,7,Yes,No,23,7,6,Yes,Yes,50,7,Yes,Yes,Loss,Yes
+M,50,No,7,Positive,Negative,2,Yes,No,13,5,7,No,Yes,47,3,No,No,Intact,Yes
+F,27,No,1,Positive,Positive,17,No,No,30,10,10,Yes,No,11,7,No,No,Intact,Yes
+F,45,No,65,Positive,Negative,11,Yes,No,20,5,7,Yes,Yes,52,3,Yes,Yes,Loss,Yes
+M,33,Yes,30,Negative,Negative,13,No,No,23,8,7,No,No,50,5,No,No,Intact,Yes
+F,55,Yes,30,Positive,Negative,7,No,No,17,5,6,Yes,No,47,4,No,Yes,Intact,Yes
+F,48,No,90,Negative,Negative,8,Yes,No,11,7,6,No,No,17,5,No,No,Intact,Yes
+M,41,No,25,Positive,Negative,15,No,No,17,5,5,No,No,40,5,No,No,Intact,Yes
+M,32,No,2,Positive,Positive,5,No,No,17,8,8,No,No,7,5,No,No,Intact,Yes
+F,54,Yes,210,Positive,Negative,11,Yes,No,23,7,5,Yes,Yes,40,7,Yes,Yes,Loss,Yes
+F,54,Yes,210,Positive,Negative,13,Yes,No,21,7,5,Yes,Yes,50,7,Yes,Yes,Loss,Yes
+M,46,No,30,Negative,Negative,7,No,No,10,8,6,No,Yes,30,6,No,No,Intact,Yes
+M,26,No,2,Positive,Negative,11,No,No,18,7,8,No,No,16,6,No,No,Intact,Yes
+F,33,No,7,Negative,Negative,10,No,No,19,8,7,No,No,21,5,No,No,Intact,Yes
+F,43,No,7,Negative,Negative,11,No,No,27,7,6,No,No,19,5,No,No,Intact,Yes
+M,31,No,1,Positive,Positive,8,No,No,21,10,10,Yes,No,19,7,No,No,Intact,Yes
+F,55,Yes,210,Positive,Positive,5,Yes,No,23,7,6,Yes,Yes,50,7,Yes,Yes,Loss,Yes
+F,55,Yes,180,Positive,Positive,5,No,No,19,10,8,Yes,Yes,43,7,Yes,Yes,Loss,Yes
+M,57,Yes,150,Positive,Positive,7,No,No,17,5,7,No,Yes,57,3,Yes,Yes,Loss,Yes
+F,29,Yes,2,Positive,Positive,13,No,No,13,6,8,No,No,40,5,No,No,Intact,Yes
+M,55,Yes,60,Positive,Positive,8,No,No,22,10,8,No,Yes,40,7,Yes,Yes,Loss,Yes
+F,47,Yes,7,Positive,Positive,8,Yes,No,20,8,8,Yes,Yes,40,7,Yes,Yes,Loss,Yes
+M,50,Yes,30,Negative,Negative,5,No,No,10,10,6,No,Yes,30,5,No,No,Intact,Yes
+M,52,Yes,7,Positive,Positive,5,Yes,No,20,7,10,No,Yes,25,5,Yes,No,Loss,Yes
+M,55,Yes,210,Positive,Negative,11,Yes,No,23,7,5,Yes,Yes,44,7,Yes,Yes,Loss,Yes
+F,59,Yes,180,Positive,Positive,7,No,No,20,10,8,Yes,Yes,39,7,Yes,Yes,Loss,Yes
+M,27,No,1,Positive,Positive,3,No,Yes,7,5,10,No,No,23,5,No,No,Intact,Yes
+M,52,No,30,Positive,Positive,7,No,No,20,7,5,No,Yes,52,5,Yes,Yes,Loss,Yes
+M,23,Yes,3,Positive,Positive,17,Yes,No,25,10,10,Yes,No,33,7,No,Yes,Intact,Yes
+F,23,Yes,5,Positive,Positive,30,No,No,6,7,8,No,No,24,8,No,No,Intact,Yes
+F,54,No,1,Positive,Positive,17,No,No,26,5,9,Yes,Yes,54,4,Yes,Yes,Loss,Yes
+F,26,No,2,Positive,Positive,15,No,Yes,22,10,8,Yes,No,10,7,Yes,No,Intact,Yes
+F,58,Yes,60,Positive,Positive,15,Yes,Yes,22,7,8,Yes,No,43,5,Yes,Yes,Loss,Yes
+M,60,Yes,90,Positive,Negative,12,No,Yes,27,7,6,Yes,Yes,40,7,Yes,Yes,Loss,Yes
+M,68,Yes,60,Negative,Negative,11,Yes,No,22,8,5,No,Yes,72,3,Yes,No,Intact,Yes
+M,58,Yes,2,Negative,Negative,8,No,No,10,7,6,No,Yes,34,7,No,No,Intact,Yes
+M,55,Yes,60,Positive,Positive,8,No,Yes,22,10,8,Yes,Yes,37,7,Yes,Yes,Loss,Yes
+M,30,Yes,7,Positive,Positive,17,Yes,No,21,3,10,No,No,43,5,No,No,Intact,Yes
+M,57,Yes,30,Positive,Negative,17,Yes,Yes,23,7,6,No,Yes,43,6,Yes,Yes,Loss,Yes
+M,25,No,3,Positive,Positive,15,Yes,Yes,22,10,8,No,No,24,7,No,No,Intact,Yes
+F,23,Yes,120,Positive,Positive,2,No,No,7,8,8,Yes,No,14,8,No,No,Intact,Yes
+M,30,No,7,Positive,Negative,12,No,Yes,21,8,8,No,No,31,5,Yes,Yes,Loss,No
+F,29,No,10,Positive,Negative,12,No,Yes,21,8,7,No,No,35,5,Yes,Yes,Loss,No
+M,27,No,2,Positive,Negative,13,No,Yes,17,7,7,No,No,16,5,No,No,Intact,No
+M,27,No,7,Negative,Negative,10,No,No,10,8,6,No,No,20,5,No,No,Intact,No
+M,44,No,7,Positive,Negative,3,No,No,17,5,8,No,Yes,33,2,Yes,Yes,Loss,No
+F,45,Yes,3,Negative,Negative,5,No,Yes,17,5,5,No,Yes,22,2,Yes,Yes,Loss,No
+F,47,No,7,Positive,Positive,15,Yes,No,30,6,9,No,No,52,3,Yes,Yes,Loss,No
+F,42,No,3,Positive,Positive,2,No,No,0,0,9,No,Yes,52,2,Yes,Yes,Loss,No
+M,39,No,2,Positive,Positive,0,No,No,0,0,10,Yes,Yes,80,0,Yes,Yes,Loss,No
+F,39,No,3,Positive,Negative,11,Yes,No,29,10,7,Yes,No,27,7,No,No,Intact,No
+F,29,No,30,Positive,Negative,11,No,No,27,8,8,No,No,50,5,No,No,Intact,No
+M,31,No,30,Positive,Negative,7,No,No,17,5,6,No,No,51,5,No,No,Intact,No
+M,39,No,30,Positive,Negative,20,No,Yes,0,0,5,No,No,52,5,Yes,No,Loss,No
+M,28,No,7,Negative,Negative,7,No,No,10,8,6,No,No,11,5,No,No,Intact,No
+F,16,No,4,Negative,Negative,1,No,No,6,5,5,No,No,13,5,No,No,Intact,No
+F,36,No,30,Positive,Positive,0,Yes,Yes,50,10,8,Yes,Yes,0,0,Yes,No,Loss,No
+M,37,No,3,Negative,Negative,3,No,No,13,10,5,No,No,23,6,No,No,Intact,No
+F,27,No,90,Positive,Negative,2,No,Yes,22,4,5,Yes,No,43,2,Yes,Yes,Loss,No
+M,23,No,5,Positive,Negative,0,No,No,0,0,7,No,No,0,0,No,Yes,Intact,No
+M,24,No,2,Negative,Negative,2,No,No,7,5,6,No,No,32,3,No,No,Intact,No
+F,40,No,2,Negative,Negative,3,No,No,7,5,5,No,No,14,3,No,No,Intact,No
+M,22,No,30,Positive,Negative,1,No,Yes,7,7,6,No,No,10,5,Yes,Yes,Intact,No
+F,23,No,3,Positive,Positive,10,No,Yes,22,8,8,Yes,No,41,7,Yes,Yes,Loss,No
+F,35,No,30,Negative,Negative,3,No,No,3,3,2,No,No,16,2,No,No,Intact,No
+M,41,Yes,0,Negative,Negative,17,No,No,0,0,5,No,No,50,5,No,No,Intact,No
+F,22,No,2,Positive,Negative,5,No,No,9,8,5,No,No,13,6,No,No,Intact,No
+M,45,No,7,Positive,Negative,3,No,No,17,5,8,No,Yes,24,2,Yes,Yes,Intact,No
+M,26,No,2,Positive,Negative,13,No,No,17,7,7,No,No,16,5,No,No,Intact,No
+M,23,No,2,Negative,Negative,3,No,No,7,7,5,No,No,13,7,No,No,Intact,No
+M,29,No,7,Positive,Positive,2,No,No,0,0,3,Yes,No,65,2,Yes,Yes,Loss,No
+F,32,No,30,Positive,Negative,5,No,No,20,7,8,No,No,50,5,No,No,Intact,No
+F,22,No,14,Positive,Negative,10,No,No,20,5,6,No,No,42,2,No,No,Intact,No
+F,40,No,5,Negative,Negative,3,Yes,No,7,5,1,No,No,15,3,No,No,Intact,No
+M,38,No,1,Positive,Positive,2,Yes,No,5,3,10,No,No,52,2,Yes,Yes,Loss,No
+M,32,No,3,Negative,Negative,4,No,No,7,7,6,No,No,11,7,No,No,Intact,No
+M,33,No,7,Negative,Negative,3,No,No,10,7,4,No,No,17,5,No,No,Intact,No
+F,25,No,3,Positive,Negative,4,No,No,7,8,6,No,No,10,7,No,No,Intact,No
+F,26,No,2,Negative,Negative,3,No,No,7,7,5,No,No,10,7,No,No,Intact,No
+F,23,No,3,Negative,Negative,7,No,No,11,8,6,No,No,21,7,No,No,Intact,No
+M,25,No,2,Negative,Negative,7,No,No,13,8,6,No,No,19,7,No,No,Intact,No
+F,32,No,3,Negative,Negative,4,No,No,7,7,5,No,No,16,7,No,No,Intact,No
+F,33,No,7,Negative,Negative,10,No,No,19,8,7,No,No,21,5,No,No,Intact,No
+F,43,No,7,Negative,Negative,11,No,No,27,7,6,No,No,19,5,No,No,Intact,No

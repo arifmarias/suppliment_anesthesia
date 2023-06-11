@@ -2,6 +2,7 @@ import streamlit as st  # pip install streamlit
 from streamlit_option_menu import option_menu  # pip install streamlit-option-menu
 from datetime import datetime
 import calendar
+import pandas as pd
 # import database as db
 
 # -------------- SETTINGS --------------
@@ -90,10 +91,11 @@ with st.form("entry_form", clear_on_submit=True):
             Curved_Canal =st.radio("Curved Canal", options=("Yes","No"), horizontal=True)
             Mobility = st.radio("Mobility", options=("Yes","No"), horizontal=True)
             Medical_History = st.radio("Medical History", options=["Yes","No"], index =1, horizontal=True)
+            periodontal_space = st.radio('Periodontal Space', options=("Yes","No"), horizontal=True)
             PDL_Ligament_involvement = st.radio("Periodontal Ligament Involvement", options=("Yes","No"), horizontal=True)
             Palpation = st.radio("Palpation", options=("Positive","Negative"), horizontal=True)
             Lamina_Dura = st.radio("Lamina Dura", options=("Loss","Intact"), horizontal=True)
-            Percussion_Test = st.radio("Percission Test",("Positive +", "Positive ++", "Negative"), horizontal=True)
+            Percussion_Test = st.radio("Percission Test",("Positive", "Negative"), horizontal=True)
             Pain_Duration_Days = st.number_input("Pain Duration (in Days)",format='%0.0f')
             EPT_duration_before_anaesthesia_seconds = st.number_input("Electrical Pulp Test Response's Duration (in seconds)",format='%0.0f')
             EPT_current_pass = st.number_input("Electric Pulp Test's Current Pass (in Unit)",format='%0.0f')
@@ -102,16 +104,31 @@ with st.form("entry_form", clear_on_submit=True):
             Cold_test_VAS_Score_Before_anaesthesia = st.slider('Cold Test (VAS) score', 0, 10,step=1)
             Clinical_Pain_VAS_Score = st.slider('Clinical Test (VAS) score', 0, 10,step=1)
             EPT_VAS_before_anaesthesia = st.slider('Electric Pulp Test (VAS) response score', 0, 10,step=1)
-            periodontal_space_16 = st.multiselect('Periodontal Space', ("MB","DB","ML","DL"))
+            
             local_Anesthetic = st.text_input("Local Anesthetic Procedure's Name")
             comment = st.text_area("Any Other Comment", placeholder="Enter a comment here ...")
         
         "---"
+        data = [[Patient_Gender,Patient_Age,Pulp_Stone_or_Calcification,
+                 Pain_Duration_Days,Percussion_Test,Palpation,EPT_duration_before_anaesthesia_seconds,
+                 Dental_History,Curved_Canal,Cold_Test_Pain_Duration_before_anaesthesia_seconds,
+                 Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,
+                 EPT_current_pass,EPT_VAS_before_anaesthesia,periodontal_space,PDL_Ligament_involvement,
+                 Lamina_Dura]]          
+        df = pd.DataFrame(data,columns=['Patient_Gender','Patient_Age','Pulp_Stone_or_Calcification','Pain_Duration_Days'
+                                        ,'Percussion_Test','Palpation','EPT_duration_before_anaesthesia_seconds'
+                                        ,'Dental_History','Curved_Canal','Cold_Test_Pain_Duration_before_anaesthesia_seconds'
+                                        ,'Cold_test_VAS_Score_Before_anaesthesia','Clinical_Pain_VAS_Score','Mobility'
+                                        ,'Medical_History','EPT_current_pass','EPT_VAS_before_anaesthesia','PDL_Space'
+                                        ,'PDL_Ligament_involvement','Lamina_Dura'])
         submitted = st.form_submit_button("Submit Data")
 
-# if submitted:
-#         input_date = str(day) + "/" + str(month) + "/" +str(year)
-#         year_month = str(year) + "_" + str(month)
-#         period = str(year)
-#         db.insert_period(str(datetime.utcnow()), input_date, period, year_month,invest_area, invest_amount, comment)
-#         st.success("Data saved!")
+if submitted:
+      
+      st.dataframe(df)
+      
+        # input_date = str(day) + "/" + str(month) + "/" +str(year)
+        # year_month = str(year) + "_" + str(month)
+        # period = str(year)
+        # db.insert_period(str(datetime.utcnow()), input_date, period, year_month,invest_area, invest_amount, comment)
+        # st.success("Data saved!")
