@@ -18693,3 +18693,137 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
          verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x0000026D5002FC70>)
 2023-06-11 23:46:19,419:INFO:Checking exceptions
 2023-06-11 23:46:19,419:INFO:Preloading libraries
+2023-06-11 23:51:34,898:INFO:Initializing predict_model()
+2023-06-11 23:51:34,898:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000026D50B728F0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=123,
+                                      verbose=0, warm_start=False))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x0000026D50BB0280>)
+2023-06-11 23:51:34,899:INFO:Checking exceptions
+2023-06-11 23:51:34,899:INFO:Preloading libraries
+2023-06-11 23:51:34,901:INFO:Set up data.
+2023-06-11 23:51:34,910:INFO:Set up index.
+2023-06-11 23:53:10,037:INFO:Initializing predict_model()
+2023-06-11 23:53:10,038:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000026D50B728F0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=123,
+                                      verbose=0, warm_start=False))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x0000026D52047B50>)
+2023-06-11 23:53:10,038:INFO:Checking exceptions
+2023-06-11 23:53:10,038:INFO:Preloading libraries
+2023-06-11 23:53:10,040:INFO:Set up data.
+2023-06-11 23:53:10,050:INFO:Set up index.
+2023-06-11 23:54:52,039:INFO:Initializing save_model()
+2023-06-11 23:54:52,039:INFO:save_model(model=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=123,
+                                      verbose=0, warm_start=False))],
+         verbose=False), model_name=Final_ET_Model_11June2023, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'PDL_Space',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2023-06-11 23:54:52,040:INFO:Adding model into prep_pipe
+2023-06-11 23:54:52,050:WARNING:Only Model saved as it was a pipeline.
+2023-06-11 23:54:52,111:INFO:Final_ET_Model_11June2023.pkl saved in current working directory
+2023-06-11 23:54:52,210:INFO:Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                 ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0,
+                                      class_weight=None, criterion='gini',
+                                      max_depth=None, max_features='sqrt',
+                                      max_leaf_nodes=None, max_samples=None,
+                                      min_impurity_decrease=0.0,
+                                      min_samples_leaf=1, min_samples_split=2,
+                                      min_weight_fraction_leaf=0.0,
+                                      n_estimators=100, n_jobs=-1,
+                                      oob_score=False, random_state=123,
+                                      verbose=0, warm_start=False))],
+         verbose=False)
+2023-06-11 23:54:52,210:INFO:save_model() successfully completed......................................
