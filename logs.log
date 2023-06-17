@@ -23061,3 +23061,1164 @@ dtype: int64}],
          verbose=False)
 2023-06-17 13:10:34,838:INFO:save_model() successfully completed......................................
 2023-06-17 13:10:35,114:INFO:Soft dependency imported: explainerdashboard: 0.4.2.2
+2023-06-17 16:00:31,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-17 16:00:31,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-17 16:00:31,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-17 16:00:31,684:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-17 16:00:33,198:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-17 16:00:37,413:INFO:Initializing load_model()
+2023-06-17 16:00:37,414:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-17 16:00:37,439:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:37,440:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:37,445:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:37,454:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-17 16:00:37,625:INFO:Initializing predict_model()
+2023-06-17 16:00:37,625:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C4C0504B50>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001C4A31089A0>)
+2023-06-17 16:00:37,625:INFO:Checking exceptions
+2023-06-17 16:00:37,625:INFO:Preloading libraries
+2023-06-17 16:00:37,625:INFO:Set up data.
+2023-06-17 16:00:37,633:INFO:Set up index.
+2023-06-17 16:00:55,146:INFO:Initializing load_model()
+2023-06-17 16:00:55,147:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-17 16:00:55,149:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:55,149:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:55,156:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:00:55,156:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-17 16:00:55,319:INFO:Initializing predict_model()
+2023-06-17 16:00:55,319:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C4C05D4FD0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001C4A3133EC0>)
+2023-06-17 16:00:55,320:INFO:Checking exceptions
+2023-06-17 16:00:55,320:INFO:Preloading libraries
+2023-06-17 16:00:55,320:INFO:Set up data.
+2023-06-17 16:00:55,326:INFO:Set up index.
+2023-06-17 16:01:58,925:INFO:Initializing load_model()
+2023-06-17 16:01:58,926:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-17 16:01:58,926:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:01:58,927:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:01:58,934:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-17 16:01:58,934:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-17 16:01:59,098:INFO:Initializing predict_model()
+2023-06-17 16:01:59,099:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C4C0562910>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001C4C0526200>)
+2023-06-17 16:01:59,099:INFO:Checking exceptions
+2023-06-17 16:01:59,099:INFO:Preloading libraries
+2023-06-17 16:01:59,100:INFO:Set up data.
+2023-06-17 16:01:59,106:INFO:Set up index.
+2023-06-17 16:03:14,371:INFO:Initializing interpret_model()
+2023-06-17 16:03:14,371:INFO:interpret_model(estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>)
+2023-06-17 16:03:14,371:INFO:Checking exceptions
+2023-06-17 16:03:14,371:INFO:Soft dependency imported: shap: 0.41.0
+2023-06-17 16:03:51,603:INFO:Initializing evaluate_model()
+2023-06-17 16:03:51,603:INFO:evaluate_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-06-17 16:03:51,785:INFO:Initializing plot_model()
+2023-06-17 16:03:51,785:INFO:plot_model(plot=pipeline, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, system=True)
+2023-06-17 16:03:51,785:INFO:Checking exceptions
+2023-06-17 16:03:51,787:INFO:Preloading libraries
+2023-06-17 16:03:51,787:INFO:Copying training dataset
+2023-06-17 16:03:51,787:INFO:Plot type: pipeline
+2023-06-17 16:03:54,992:INFO:Initializing plot_model()
+2023-06-17 16:03:54,992:INFO:plot_model(plot=parameter, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, system=True)
+2023-06-17 16:03:54,993:INFO:Checking exceptions
+2023-06-17 16:03:54,994:INFO:Preloading libraries
+2023-06-17 16:03:54,995:INFO:Copying training dataset
+2023-06-17 16:03:54,995:INFO:Plot type: parameter
+2023-06-17 16:03:54,998:INFO:Visual Rendered Successfully
+2023-06-17 16:03:55,168:INFO:plot_model() successfully completed......................................
+2023-06-17 16:03:56,254:INFO:Initializing plot_model()
+2023-06-17 16:03:56,254:INFO:plot_model(plot=auc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, system=True)
+2023-06-17 16:03:56,255:INFO:Checking exceptions
+2023-06-17 16:03:56,256:INFO:Preloading libraries
+2023-06-17 16:03:56,258:INFO:Copying training dataset
+2023-06-17 16:03:56,258:INFO:Plot type: auc
+2023-06-17 16:03:56,363:INFO:Fitting Model
+2023-06-17 16:03:56,364:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\base.py:420: UserWarning:
+
+X does not have valid feature names, but LogisticRegression was fitted with feature names
+
+
+2023-06-17 16:03:56,364:INFO:Scoring test/hold-out set
+2023-06-17 16:03:56,544:INFO:Visual Rendered Successfully
+2023-06-17 16:03:56,703:INFO:plot_model() successfully completed......................................
+2023-06-17 16:04:01,255:INFO:Initializing plot_model()
+2023-06-17 16:04:01,255:INFO:plot_model(plot=feature_all, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, system=True)
+2023-06-17 16:04:01,255:INFO:Checking exceptions
+2023-06-17 16:04:01,257:INFO:Preloading libraries
+2023-06-17 16:04:01,258:INFO:Copying training dataset
+2023-06-17 16:04:01,258:INFO:Plot type: feature_all
+2023-06-17 16:04:01,598:INFO:Visual Rendered Successfully
+2023-06-17 16:04:01,786:INFO:plot_model() successfully completed......................................
+2023-06-17 16:05:22,528:INFO:Soft dependency imported: fairlearn: 0.7.0
+2023-06-17 16:05:22,686:INFO:Initializing predict_model()
+2023-06-17 16:05:22,686:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000014F59146680>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x0000014F5551EE60>)
+2023-06-17 16:05:22,686:INFO:Checking exceptions
+2023-06-17 16:05:22,686:INFO:Preloading libraries
+2023-06-17 16:05:23,009:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,011:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,013:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,019:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,021:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,030:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,031:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,035:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,039:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Recall is ill-defined and being set to 0.0 due to no true samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,048:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,055:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,056:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,061:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,069:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,071:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,072:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,074:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,075:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,078:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,083:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,098:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,105:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,114:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,117:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,121:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,125:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:1609: UndefinedMetricWarning:
+
+F-score is ill-defined and being set to 0.0 due to no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+
+
+2023-06-17 16:05:23,137:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,139:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,140:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,141:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,143:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,144:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,145:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,147:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,148:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,149:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,152:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,153:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,155:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,156:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,158:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,159:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,160:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,161:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,163:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,164:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:05:23,165:WARNING:c:\Users\user\Anaconda3\lib\site-packages\sklearn\metrics\_classification.py:673: RuntimeWarning:
+
+invalid value encountered in true_divide
+
+
+2023-06-17 16:07:01,452:INFO:PyCaret ClassificationExperiment
+2023-06-17 16:07:01,452:INFO:Logging name: clf-default-name
+2023-06-17 16:07:01,452:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-06-17 16:07:01,452:INFO:version 3.0.0
+2023-06-17 16:07:01,452:INFO:Initializing setup()
+2023-06-17 16:07:01,453:INFO:self.USI: 4045
+2023-06-17 16:07:01,453:INFO:self._variable_keys: {'y_test', 'data', 'X', 'X_test', 'target_param', 'gpu_n_jobs_param', 'exp_name_log', 'log_plots_param', '_available_plots', 'n_jobs_param', 'fold_shuffle_param', 'y', 'is_multiclass', 'y_train', 'exp_id', 'idx', 'html_param', 'memory', 'fold_generator', 'X_train', 'gpu_param', 'fix_imbalance', 'seed', 'USI', 'pipeline', '_ml_usecase', 'logging_param', 'fold_groups_param'}
+2023-06-17 16:07:01,453:INFO:Checking environment
+2023-06-17 16:07:01,453:INFO:python_version: 3.10.9
+2023-06-17 16:07:01,453:INFO:python_build: ('main', 'Mar  1 2023 18:18:15')
+2023-06-17 16:07:01,453:INFO:machine: AMD64
+2023-06-17 16:07:01,453:INFO:platform: Windows-10-10.0.22621-SP0
+2023-06-17 16:07:01,454:INFO:Memory: svmem(total=16537464832, available=4333498368, percent=73.8, used=12203966464, free=4333498368)
+2023-06-17 16:07:01,454:INFO:Physical Core: 6
+2023-06-17 16:07:01,454:INFO:Logical Core: 12
+2023-06-17 16:07:01,454:INFO:Checking libraries
+2023-06-17 16:07:01,454:INFO:System:
+2023-06-17 16:07:01,454:INFO:    python: 3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]
+2023-06-17 16:07:01,454:INFO:executable: c:\Users\user\Anaconda3\python.exe
+2023-06-17 16:07:01,454:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-06-17 16:07:01,454:INFO:PyCaret required dependencies:
+2023-06-17 16:07:01,454:INFO:                 pip: 22.3.1
+2023-06-17 16:07:01,454:INFO:          setuptools: 65.6.3
+2023-06-17 16:07:01,455:INFO:             pycaret: 3.0.0
+2023-06-17 16:07:01,455:INFO:             IPython: 7.34.0
+2023-06-17 16:07:01,455:INFO:          ipywidgets: 7.6.5
+2023-06-17 16:07:01,455:INFO:                tqdm: 4.64.1
+2023-06-17 16:07:01,455:INFO:               numpy: 1.22.3
+2023-06-17 16:07:01,455:INFO:              pandas: 1.5.3
+2023-06-17 16:07:01,455:INFO:              jinja2: 3.0.0
+2023-06-17 16:07:01,455:INFO:               scipy: 1.9.3
+2023-06-17 16:07:01,455:INFO:              joblib: 1.2.0
+2023-06-17 16:07:01,455:INFO:             sklearn: 1.2.1
+2023-06-17 16:07:01,455:INFO:                pyod: 1.0.9
+2023-06-17 16:07:01,455:INFO:            imblearn: 0.10.1
+2023-06-17 16:07:01,456:INFO:   category_encoders: 2.6.0
+2023-06-17 16:07:01,456:INFO:            lightgbm: 3.3.5
+2023-06-17 16:07:01,456:INFO:               numba: 0.56.4
+2023-06-17 16:07:01,456:INFO:            requests: 2.28.1
+2023-06-17 16:07:01,456:INFO:          matplotlib: 3.6.3
+2023-06-17 16:07:01,456:INFO:          scikitplot: 0.3.7
+2023-06-17 16:07:01,456:INFO:         yellowbrick: 1.5
+2023-06-17 16:07:01,456:INFO:              plotly: 5.14.1
+2023-06-17 16:07:01,456:INFO:             kaleido: 0.2.1
+2023-06-17 16:07:01,456:INFO:         statsmodels: 0.13.5
+2023-06-17 16:07:01,456:INFO:              sktime: 0.18.0
+2023-06-17 16:07:01,457:INFO:               tbats: 1.1.3
+2023-06-17 16:07:01,457:INFO:            pmdarima: 2.0.3
+2023-06-17 16:07:01,457:INFO:              psutil: 5.9.0
+2023-06-17 16:07:01,457:INFO:PyCaret optional dependencies:
+2023-06-17 16:07:01,457:INFO:                shap: 0.41.0
+2023-06-17 16:07:01,457:INFO:           interpret: 0.3.2
+2023-06-17 16:07:01,457:INFO:                umap: 0.5.3
+2023-06-17 16:07:01,457:INFO:    pandas_profiling: 4.1.2
+2023-06-17 16:07:01,457:INFO:  explainerdashboard: 0.4.2.2
+2023-06-17 16:07:01,457:INFO:             autoviz: 0.1.601
+2023-06-17 16:07:01,457:INFO:           fairlearn: 0.7.0
+2023-06-17 16:07:01,457:INFO:             xgboost: 1.7.5
+2023-06-17 16:07:01,457:INFO:            catboost: 1.2
+2023-06-17 16:07:01,457:INFO:              kmodes: 0.12.2
+2023-06-17 16:07:01,457:INFO:             mlxtend: 0.22.0
+2023-06-17 16:07:01,458:INFO:       statsforecast: 1.5.0
+2023-06-17 16:07:01,458:INFO:        tune_sklearn: 0.4.5
+2023-06-17 16:07:01,458:INFO:                 ray: 2.4.0
+2023-06-17 16:07:01,458:INFO:            hyperopt: 0.2.7
+2023-06-17 16:07:01,458:INFO:              optuna: 3.1.1
+2023-06-17 16:07:01,458:INFO:               skopt: 0.9.0
+2023-06-17 16:07:01,458:INFO:              mlflow: 1.30.1
+2023-06-17 16:07:01,458:INFO:              gradio: 3.28.3
+2023-06-17 16:07:01,458:INFO:             fastapi: 0.95.1
+2023-06-17 16:07:01,458:INFO:             uvicorn: 0.22.0
+2023-06-17 16:07:01,458:INFO:              m2cgen: 0.10.0
+2023-06-17 16:07:01,458:INFO:           evidently: 0.3.1
+2023-06-17 16:07:01,458:INFO:               fugue: 0.8.3
+2023-06-17 16:07:01,459:INFO:           streamlit: Not installed
+2023-06-17 16:07:01,459:INFO:             prophet: Not installed
+2023-06-17 16:07:01,459:INFO:None
+2023-06-17 16:07:01,459:INFO:Set up data.
+2023-06-17 16:07:01,470:INFO:Set up train/test split.
+2023-06-17 16:07:01,478:INFO:Set up index.
+2023-06-17 16:07:01,478:INFO:Set up folding strategy.
+2023-06-17 16:07:01,478:INFO:Assigning column types.
+2023-06-17 16:07:01,482:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-17 16:07:01,535:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,536:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,574:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:01,578:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:01,642:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,643:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,684:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:01,688:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:01,689:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-06-17 16:07:01,746:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,779:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:01,782:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:01,837:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:07:01,869:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:01,872:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:01,873:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-06-17 16:07:01,960:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:01,964:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:02,059:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:02,062:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:02,065:INFO:Preparing preprocessing pipeline...
+2023-06-17 16:07:02,066:INFO:Set up label encoding.
+2023-06-17 16:07:02,067:INFO:Set up simple imputation.
+2023-06-17 16:07:02,078:INFO:Set up encoding of ordinal features.
+2023-06-17 16:07:02,104:INFO:Set up encoding of categorical features.
+2023-06-17 16:07:02,255:INFO:Finished creating preprocessing pipeline.
+2023-06-17 16:07:02,383:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0)))],
+         verbose=False)
+2023-06-17 16:07:02,383:INFO:Creating final display dataframe.
+2023-06-17 16:07:02,933:INFO:Setup _display_container:                     Description             Value
+0                    Session id              4176
+1                        Target   Need_Suppliment
+2                   Target type            Binary
+3                Target mapping     No: 0, Yes: 1
+4           Original data shape         (127, 21)
+5        Transformed data shape         (127, 21)
+6   Transformed train set shape          (88, 21)
+7    Transformed test set shape          (39, 21)
+8              Ordinal features                12
+9              Numeric features                 8
+10         Categorical features                12
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17               Fold Generator   StratifiedKFold
+18                  Fold Number                10
+19                     CPU Jobs                -1
+20                      Use GPU             False
+21               Log Experiment             False
+22              Experiment Name  clf-default-name
+23                          USI              4045
+2023-06-17 16:07:03,030:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:03,033:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:03,122:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:07:03,125:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:07:03,126:INFO:setup() successfully completed in 2.11s...............
+2023-06-17 16:07:03,126:INFO:Soft dependency imported: autoviz: 0.1.601
+2023-06-17 16:10:26,880:INFO:PyCaret ClassificationExperiment
+2023-06-17 16:10:26,880:INFO:Logging name: clf-default-name
+2023-06-17 16:10:26,880:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-06-17 16:10:26,880:INFO:version 3.0.0
+2023-06-17 16:10:26,881:INFO:Initializing setup()
+2023-06-17 16:10:26,881:INFO:self.USI: 373f
+2023-06-17 16:10:26,881:INFO:self._variable_keys: {'y_test', 'data', 'X', 'X_test', 'target_param', 'gpu_n_jobs_param', 'exp_name_log', 'log_plots_param', '_available_plots', 'n_jobs_param', 'fold_shuffle_param', 'y', 'is_multiclass', 'y_train', 'exp_id', 'idx', 'html_param', 'memory', 'fold_generator', 'X_train', 'gpu_param', 'fix_imbalance', 'seed', 'USI', 'pipeline', '_ml_usecase', 'logging_param', 'fold_groups_param'}
+2023-06-17 16:10:26,881:INFO:Checking environment
+2023-06-17 16:10:26,881:INFO:python_version: 3.10.9
+2023-06-17 16:10:26,881:INFO:python_build: ('main', 'Mar  1 2023 18:18:15')
+2023-06-17 16:10:26,881:INFO:machine: AMD64
+2023-06-17 16:10:26,881:INFO:platform: Windows-10-10.0.22621-SP0
+2023-06-17 16:10:26,881:INFO:Memory: svmem(total=16537464832, available=4416520192, percent=73.3, used=12120944640, free=4416520192)
+2023-06-17 16:10:26,881:INFO:Physical Core: 6
+2023-06-17 16:10:26,881:INFO:Logical Core: 12
+2023-06-17 16:10:26,881:INFO:Checking libraries
+2023-06-17 16:10:26,881:INFO:System:
+2023-06-17 16:10:26,881:INFO:    python: 3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]
+2023-06-17 16:10:26,882:INFO:executable: c:\Users\user\Anaconda3\python.exe
+2023-06-17 16:10:26,882:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-06-17 16:10:26,882:INFO:PyCaret required dependencies:
+2023-06-17 16:10:26,882:INFO:                 pip: 22.3.1
+2023-06-17 16:10:26,882:INFO:          setuptools: 65.6.3
+2023-06-17 16:10:26,882:INFO:             pycaret: 3.0.0
+2023-06-17 16:10:26,882:INFO:             IPython: 7.34.0
+2023-06-17 16:10:26,882:INFO:          ipywidgets: 7.6.5
+2023-06-17 16:10:26,882:INFO:                tqdm: 4.64.1
+2023-06-17 16:10:26,882:INFO:               numpy: 1.22.3
+2023-06-17 16:10:26,882:INFO:              pandas: 1.5.3
+2023-06-17 16:10:26,882:INFO:              jinja2: 3.0.0
+2023-06-17 16:10:26,882:INFO:               scipy: 1.9.3
+2023-06-17 16:10:26,882:INFO:              joblib: 1.2.0
+2023-06-17 16:10:26,882:INFO:             sklearn: 1.2.1
+2023-06-17 16:10:26,882:INFO:                pyod: 1.0.9
+2023-06-17 16:10:26,882:INFO:            imblearn: 0.10.1
+2023-06-17 16:10:26,882:INFO:   category_encoders: 2.6.0
+2023-06-17 16:10:26,882:INFO:            lightgbm: 3.3.5
+2023-06-17 16:10:26,882:INFO:               numba: 0.56.4
+2023-06-17 16:10:26,882:INFO:            requests: 2.28.1
+2023-06-17 16:10:26,882:INFO:          matplotlib: 3.6.3
+2023-06-17 16:10:26,882:INFO:          scikitplot: 0.3.7
+2023-06-17 16:10:26,882:INFO:         yellowbrick: 1.5
+2023-06-17 16:10:26,882:INFO:              plotly: 5.14.1
+2023-06-17 16:10:26,884:INFO:             kaleido: 0.2.1
+2023-06-17 16:10:26,884:INFO:         statsmodels: 0.13.5
+2023-06-17 16:10:26,884:INFO:              sktime: 0.18.0
+2023-06-17 16:10:26,884:INFO:               tbats: 1.1.3
+2023-06-17 16:10:26,884:INFO:            pmdarima: 2.0.3
+2023-06-17 16:10:26,884:INFO:              psutil: 5.9.0
+2023-06-17 16:10:26,884:INFO:PyCaret optional dependencies:
+2023-06-17 16:10:26,884:INFO:                shap: 0.41.0
+2023-06-17 16:10:26,884:INFO:           interpret: 0.3.2
+2023-06-17 16:10:26,884:INFO:                umap: 0.5.3
+2023-06-17 16:10:26,884:INFO:    pandas_profiling: 4.1.2
+2023-06-17 16:10:26,884:INFO:  explainerdashboard: 0.4.2.2
+2023-06-17 16:10:26,884:INFO:             autoviz: 0.1.601
+2023-06-17 16:10:26,884:INFO:           fairlearn: 0.7.0
+2023-06-17 16:10:26,884:INFO:             xgboost: 1.7.5
+2023-06-17 16:10:26,884:INFO:            catboost: 1.2
+2023-06-17 16:10:26,884:INFO:              kmodes: 0.12.2
+2023-06-17 16:10:26,884:INFO:             mlxtend: 0.22.0
+2023-06-17 16:10:26,884:INFO:       statsforecast: 1.5.0
+2023-06-17 16:10:26,885:INFO:        tune_sklearn: 0.4.5
+2023-06-17 16:10:26,885:INFO:                 ray: 2.4.0
+2023-06-17 16:10:26,885:INFO:            hyperopt: 0.2.7
+2023-06-17 16:10:26,885:INFO:              optuna: 3.1.1
+2023-06-17 16:10:26,885:INFO:               skopt: 0.9.0
+2023-06-17 16:10:26,885:INFO:              mlflow: 1.30.1
+2023-06-17 16:10:26,885:INFO:              gradio: 3.28.3
+2023-06-17 16:10:26,885:INFO:             fastapi: 0.95.1
+2023-06-17 16:10:26,885:INFO:             uvicorn: 0.22.0
+2023-06-17 16:10:26,885:INFO:              m2cgen: 0.10.0
+2023-06-17 16:10:26,885:INFO:           evidently: 0.3.1
+2023-06-17 16:10:26,885:INFO:               fugue: 0.8.3
+2023-06-17 16:10:26,885:INFO:           streamlit: Not installed
+2023-06-17 16:10:26,885:INFO:             prophet: Not installed
+2023-06-17 16:10:26,885:INFO:None
+2023-06-17 16:10:26,885:INFO:Set up data.
+2023-06-17 16:10:26,896:INFO:Set up train/test split.
+2023-06-17 16:10:26,905:INFO:Set up index.
+2023-06-17 16:10:26,905:INFO:Set up folding strategy.
+2023-06-17 16:10:26,906:INFO:Assigning column types.
+2023-06-17 16:10:26,910:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-17 16:10:26,965:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:10:26,966:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:10:27,001:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,004:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,058:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:10:27,059:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:10:27,092:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,095:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,096:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-06-17 16:10:27,152:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:10:27,185:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,189:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,249:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:10:27,289:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,295:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,296:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-06-17 16:10:27,405:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,409:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,499:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:27,502:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:27,504:INFO:Preparing preprocessing pipeline...
+2023-06-17 16:10:27,505:INFO:Set up label encoding.
+2023-06-17 16:10:27,505:INFO:Set up simple imputation.
+2023-06-17 16:10:27,512:INFO:Set up encoding of ordinal features.
+2023-06-17 16:10:27,527:INFO:Set up encoding of categorical features.
+2023-06-17 16:10:27,668:INFO:Finished creating preprocessing pipeline.
+2023-06-17 16:10:27,776:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0)))],
+         verbose=False)
+2023-06-17 16:10:27,776:INFO:Creating final display dataframe.
+2023-06-17 16:10:28,439:INFO:Setup _display_container:                     Description             Value
+0                    Session id              1974
+1                        Target   Need_Suppliment
+2                   Target type            Binary
+3                Target mapping     No: 0, Yes: 1
+4           Original data shape         (127, 21)
+5        Transformed data shape         (127, 21)
+6   Transformed train set shape          (88, 21)
+7    Transformed test set shape          (39, 21)
+8              Ordinal features                12
+9              Numeric features                 8
+10         Categorical features                12
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17               Fold Generator   StratifiedKFold
+18                  Fold Number                10
+19                     CPU Jobs                -1
+20                      Use GPU             False
+21               Log Experiment             False
+22              Experiment Name  clf-default-name
+23                          USI              373f
+2023-06-17 16:10:28,538:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:28,542:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:28,634:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:10:28,637:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:10:28,639:INFO:setup() successfully completed in 2.4s...............
+2023-06-17 16:10:28,639:INFO:Soft dependency imported: autoviz: 0.1.601
+2023-06-17 16:11:24,911:INFO:PyCaret ClassificationExperiment
+2023-06-17 16:11:24,911:INFO:Logging name: clf-default-name
+2023-06-17 16:11:24,912:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-06-17 16:11:24,912:INFO:version 3.0.0
+2023-06-17 16:11:24,912:INFO:Initializing setup()
+2023-06-17 16:11:24,912:INFO:self.USI: f1ae
+2023-06-17 16:11:24,912:INFO:self._variable_keys: {'y_test', 'data', 'X', 'X_test', 'target_param', 'gpu_n_jobs_param', 'exp_name_log', 'log_plots_param', '_available_plots', 'n_jobs_param', 'fold_shuffle_param', 'y', 'is_multiclass', 'y_train', 'exp_id', 'idx', 'html_param', 'memory', 'fold_generator', 'X_train', 'gpu_param', 'fix_imbalance', 'seed', 'USI', 'pipeline', '_ml_usecase', 'logging_param', 'fold_groups_param'}
+2023-06-17 16:11:24,912:INFO:Checking environment
+2023-06-17 16:11:24,912:INFO:python_version: 3.10.9
+2023-06-17 16:11:24,912:INFO:python_build: ('main', 'Mar  1 2023 18:18:15')
+2023-06-17 16:11:24,912:INFO:machine: AMD64
+2023-06-17 16:11:24,912:INFO:platform: Windows-10-10.0.22621-SP0
+2023-06-17 16:11:24,913:INFO:Memory: svmem(total=16537464832, available=4410281984, percent=73.3, used=12127182848, free=4410281984)
+2023-06-17 16:11:24,913:INFO:Physical Core: 6
+2023-06-17 16:11:24,913:INFO:Logical Core: 12
+2023-06-17 16:11:24,913:INFO:Checking libraries
+2023-06-17 16:11:24,913:INFO:System:
+2023-06-17 16:11:24,913:INFO:    python: 3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]
+2023-06-17 16:11:24,913:INFO:executable: c:\Users\user\Anaconda3\python.exe
+2023-06-17 16:11:24,913:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-06-17 16:11:24,914:INFO:PyCaret required dependencies:
+2023-06-17 16:11:24,914:INFO:                 pip: 22.3.1
+2023-06-17 16:11:24,914:INFO:          setuptools: 65.6.3
+2023-06-17 16:11:24,914:INFO:             pycaret: 3.0.0
+2023-06-17 16:11:24,914:INFO:             IPython: 7.34.0
+2023-06-17 16:11:24,914:INFO:          ipywidgets: 7.6.5
+2023-06-17 16:11:24,914:INFO:                tqdm: 4.64.1
+2023-06-17 16:11:24,914:INFO:               numpy: 1.22.3
+2023-06-17 16:11:24,914:INFO:              pandas: 1.5.3
+2023-06-17 16:11:24,914:INFO:              jinja2: 3.0.0
+2023-06-17 16:11:24,915:INFO:               scipy: 1.9.3
+2023-06-17 16:11:24,915:INFO:              joblib: 1.2.0
+2023-06-17 16:11:24,915:INFO:             sklearn: 1.2.1
+2023-06-17 16:11:24,915:INFO:                pyod: 1.0.9
+2023-06-17 16:11:24,915:INFO:            imblearn: 0.10.1
+2023-06-17 16:11:24,915:INFO:   category_encoders: 2.6.0
+2023-06-17 16:11:24,915:INFO:            lightgbm: 3.3.5
+2023-06-17 16:11:24,915:INFO:               numba: 0.56.4
+2023-06-17 16:11:24,915:INFO:            requests: 2.28.1
+2023-06-17 16:11:24,916:INFO:          matplotlib: 3.6.3
+2023-06-17 16:11:24,916:INFO:          scikitplot: 0.3.7
+2023-06-17 16:11:24,916:INFO:         yellowbrick: 1.5
+2023-06-17 16:11:24,916:INFO:              plotly: 5.14.1
+2023-06-17 16:11:24,916:INFO:             kaleido: 0.2.1
+2023-06-17 16:11:24,916:INFO:         statsmodels: 0.13.5
+2023-06-17 16:11:24,916:INFO:              sktime: 0.18.0
+2023-06-17 16:11:24,916:INFO:               tbats: 1.1.3
+2023-06-17 16:11:24,916:INFO:            pmdarima: 2.0.3
+2023-06-17 16:11:24,916:INFO:              psutil: 5.9.0
+2023-06-17 16:11:24,916:INFO:PyCaret optional dependencies:
+2023-06-17 16:11:24,916:INFO:                shap: 0.41.0
+2023-06-17 16:11:24,916:INFO:           interpret: 0.3.2
+2023-06-17 16:11:24,916:INFO:                umap: 0.5.3
+2023-06-17 16:11:24,916:INFO:    pandas_profiling: 4.1.2
+2023-06-17 16:11:24,917:INFO:  explainerdashboard: 0.4.2.2
+2023-06-17 16:11:24,917:INFO:             autoviz: 0.1.601
+2023-06-17 16:11:24,917:INFO:           fairlearn: 0.7.0
+2023-06-17 16:11:24,917:INFO:             xgboost: 1.7.5
+2023-06-17 16:11:24,917:INFO:            catboost: 1.2
+2023-06-17 16:11:24,917:INFO:              kmodes: 0.12.2
+2023-06-17 16:11:24,917:INFO:             mlxtend: 0.22.0
+2023-06-17 16:11:24,917:INFO:       statsforecast: 1.5.0
+2023-06-17 16:11:24,917:INFO:        tune_sklearn: 0.4.5
+2023-06-17 16:11:24,917:INFO:                 ray: 2.4.0
+2023-06-17 16:11:24,917:INFO:            hyperopt: 0.2.7
+2023-06-17 16:11:24,917:INFO:              optuna: 3.1.1
+2023-06-17 16:11:24,917:INFO:               skopt: 0.9.0
+2023-06-17 16:11:24,917:INFO:              mlflow: 1.30.1
+2023-06-17 16:11:24,918:INFO:              gradio: 3.28.3
+2023-06-17 16:11:24,918:INFO:             fastapi: 0.95.1
+2023-06-17 16:11:24,918:INFO:             uvicorn: 0.22.0
+2023-06-17 16:11:24,918:INFO:              m2cgen: 0.10.0
+2023-06-17 16:11:24,918:INFO:           evidently: 0.3.1
+2023-06-17 16:11:24,918:INFO:               fugue: 0.8.3
+2023-06-17 16:11:24,918:INFO:           streamlit: Not installed
+2023-06-17 16:11:24,918:INFO:             prophet: Not installed
+2023-06-17 16:11:24,918:INFO:None
+2023-06-17 16:11:24,918:INFO:Set up data.
+2023-06-17 16:11:24,929:INFO:Set up train/test split.
+2023-06-17 16:11:24,938:INFO:Set up index.
+2023-06-17 16:11:24,938:INFO:Set up folding strategy.
+2023-06-17 16:11:24,938:INFO:Assigning column types.
+2023-06-17 16:11:24,942:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-17 16:11:24,994:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:11:24,995:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:11:25,027:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,031:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,084:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-17 16:11:25,085:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:11:25,124:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,127:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,128:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-06-17 16:11:25,181:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:11:25,216:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,219:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,274:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-06-17 16:11:25,306:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,310:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,310:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-06-17 16:11:25,397:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,400:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,486:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:25,489:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:25,490:INFO:Preparing preprocessing pipeline...
+2023-06-17 16:11:25,491:INFO:Set up label encoding.
+2023-06-17 16:11:25,491:INFO:Set up simple imputation.
+2023-06-17 16:11:25,498:INFO:Set up encoding of ordinal features.
+2023-06-17 16:11:25,517:INFO:Set up encoding of categorical features.
+2023-06-17 16:11:25,655:INFO:Finished creating preprocessing pipeline.
+2023-06-17 16:11:25,761:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0)))],
+         verbose=False)
+2023-06-17 16:11:25,761:INFO:Creating final display dataframe.
+2023-06-17 16:11:26,199:INFO:Setup _display_container:                     Description             Value
+0                    Session id               559
+1                        Target   Need_Suppliment
+2                   Target type            Binary
+3                Target mapping     No: 0, Yes: 1
+4           Original data shape         (127, 21)
+5        Transformed data shape         (127, 21)
+6   Transformed train set shape          (88, 21)
+7    Transformed test set shape          (39, 21)
+8              Ordinal features                12
+9              Numeric features                 8
+10         Categorical features                12
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17               Fold Generator   StratifiedKFold
+18                  Fold Number                10
+19                     CPU Jobs                -1
+20                      Use GPU             False
+21               Log Experiment             False
+22              Experiment Name  clf-default-name
+23                          USI              f1ae
+2023-06-17 16:11:26,296:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:26,299:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:26,385:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-06-17 16:11:26,389:INFO:Soft dependency imported: catboost: 1.2
+2023-06-17 16:11:26,390:INFO:setup() successfully completed in 1.92s...............
+2023-06-17 16:11:26,390:INFO:Soft dependency imported: autoviz: 0.1.601
