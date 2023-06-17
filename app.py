@@ -138,7 +138,7 @@ if submitted:
       #st.dataframe(new_prediction)
       st.write("#### Necessity for Supplement (Prediction): ", new_prediction['prediction_label'][0])
       st.write("#### Prediction Probability Score: ", new_prediction['prediction_score'][0])
-      interpret_model(saved_final_rf, display_format='streamlit')
+      st.image (interpret_model(saved_final_rf))
       # dashboard(saved_final_rf)
 
       
