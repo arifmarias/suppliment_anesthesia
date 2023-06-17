@@ -128,7 +128,7 @@ with st.form("entry_form", clear_on_submit=True):
                                         ,'Cold_test_VAS_Score_Before_anaesthesia','Clinical_Pain_VAS_Score','Mobility'
                                         ,'Medical_History','EPT_current_pass','EPT_VAS_before_anaesthesia','PDL_Space'
                                         ,'PDL_Ligament_involvement','Lamina_Dura','local_Anesthetic'])
-        submitted = st.form_submit_button("Submit Data")
+        submitted = st.form_submit_button("Submit Data for Prediction")
 
 if submitted:
       
