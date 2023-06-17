@@ -104,7 +104,7 @@ with st.form("entry_form", clear_on_submit=True):
             Cold_Test_Pain_Duration_before_anaesthesia_seconds = st.number_input("Cold Test Pain Duration (in seconds)",format='%0.0f')
             st.image("http://www.wikidoc.org/images/e/eb/Pain_scale.jpg",width=250)
             Cold_test_VAS_Score_Before_anaesthesia = st.slider('Cold Test (VAS) score', 0, 10,step=1)
-            Clinical_Pain_VAS_Score = st.slider('Clinical Test (VAS) score', 0, 10,step=1)
+            Clinical_Pain_VAS_Score = st.slider('Clinical Pain (VAS) score', 0, 10,step=1)
             EPT_VAS_before_anaesthesia = st.slider('Electric Pulp Test (VAS) response score', 0, 10,step=1)
             
             local_Anesthetic = st.selectbox("Type of Anaesthesia Provided",("ASANB","IANB+IN","IANB+LB","INCISIVE NB",

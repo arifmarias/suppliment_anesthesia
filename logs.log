@@ -20786,3 +20786,810 @@ dtype: int64}],
                                     warm_start=False))],
          verbose=False)
 2023-06-12 01:17:59,085:INFO:save_model() successfully completed......................................
+2023-06-12 01:25:01,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 01:25:01,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 01:25:01,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 01:25:01,124:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-12 01:25:02,256:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-12 01:26:14,476:INFO:Initializing load_model()
+2023-06-12 01:26:14,476:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 01:26:14,494:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:26:14,495:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:26:14,501:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:26:14,502:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 01:26:14,703:INFO:Initializing predict_model()
+2023-06-12 01:26:14,703:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6BE3510>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6ACC400>)
+2023-06-12 01:26:14,703:INFO:Checking exceptions
+2023-06-12 01:26:14,703:INFO:Preloading libraries
+2023-06-12 01:26:14,704:INFO:Set up data.
+2023-06-12 01:26:14,710:INFO:Set up index.
+2023-06-12 01:31:31,951:INFO:Initializing load_model()
+2023-06-12 01:31:31,951:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 01:31:31,952:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:31:31,952:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:31:31,958:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:31:31,958:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 01:31:32,115:INFO:Initializing predict_model()
+2023-06-12 01:31:32,116:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6B29F90>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AB68E0>)
+2023-06-12 01:31:32,116:INFO:Checking exceptions
+2023-06-12 01:31:32,116:INFO:Preloading libraries
+2023-06-12 01:31:32,116:INFO:Set up data.
+2023-06-12 01:31:32,122:INFO:Set up index.
+2023-06-12 01:48:36,863:INFO:Initializing load_model()
+2023-06-12 01:48:36,863:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 01:48:36,864:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:48:36,864:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:48:36,870:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 01:48:36,872:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 01:48:37,052:INFO:Initializing predict_model()
+2023-06-12 01:48:37,052:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A49957D050>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AE2660>)
+2023-06-12 01:48:37,052:INFO:Checking exceptions
+2023-06-12 01:48:37,054:INFO:Preloading libraries
+2023-06-12 01:48:37,054:INFO:Set up data.
+2023-06-12 01:48:37,059:INFO:Set up index.
+2023-06-12 02:14:18,718:INFO:Initializing load_model()
+2023-06-12 02:14:18,718:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:14:18,720:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:14:18,720:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:14:18,727:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:14:18,728:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:14:18,882:INFO:Initializing predict_model()
+2023-06-12 02:14:18,882:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6AB3390>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AE0900>)
+2023-06-12 02:14:18,882:INFO:Checking exceptions
+2023-06-12 02:14:18,882:INFO:Preloading libraries
+2023-06-12 02:14:18,883:INFO:Set up data.
+2023-06-12 02:14:18,888:INFO:Set up index.
+2023-06-12 02:15:24,699:INFO:Initializing load_model()
+2023-06-12 02:15:24,699:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:15:24,700:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:15:24,700:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:15:24,710:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:15:24,710:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:15:24,885:INFO:Initializing predict_model()
+2023-06-12 02:15:24,886:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6B2DD10>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6ACE5C0>)
+2023-06-12 02:15:24,886:INFO:Checking exceptions
+2023-06-12 02:15:24,886:INFO:Preloading libraries
+2023-06-12 02:15:24,887:INFO:Set up data.
+2023-06-12 02:15:24,894:INFO:Set up index.
+2023-06-12 02:18:27,069:INFO:Initializing load_model()
+2023-06-12 02:18:27,070:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:18:27,071:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:27,071:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:27,078:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:27,079:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:18:27,251:INFO:Initializing predict_model()
+2023-06-12 02:18:27,251:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A49B5B8110>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AE1440>)
+2023-06-12 02:18:27,251:INFO:Checking exceptions
+2023-06-12 02:18:27,252:INFO:Preloading libraries
+2023-06-12 02:18:27,252:INFO:Set up data.
+2023-06-12 02:18:27,260:INFO:Set up index.
+2023-06-12 02:18:47,823:INFO:Initializing load_model()
+2023-06-12 02:18:47,824:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:18:47,825:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:47,826:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:47,833:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:18:47,834:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:18:47,987:INFO:Initializing predict_model()
+2023-06-12 02:18:47,987:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A499674510>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4996385E0>)
+2023-06-12 02:18:47,987:INFO:Checking exceptions
+2023-06-12 02:18:47,987:INFO:Preloading libraries
+2023-06-12 02:18:47,988:INFO:Set up data.
+2023-06-12 02:18:47,995:INFO:Set up index.
+2023-06-12 02:20:10,347:INFO:Initializing load_model()
+2023-06-12 02:20:10,347:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:20:10,348:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:20:10,348:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:20:10,353:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:20:10,354:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:20:10,512:INFO:Initializing predict_model()
+2023-06-12 02:20:10,513:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4993D6C90>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6B0BF60>)
+2023-06-12 02:20:10,513:INFO:Checking exceptions
+2023-06-12 02:20:10,513:INFO:Preloading libraries
+2023-06-12 02:20:10,513:INFO:Set up data.
+2023-06-12 02:20:10,519:INFO:Set up index.
+2023-06-12 02:21:01,029:INFO:Initializing load_model()
+2023-06-12 02:21:01,029:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:21:01,030:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:01,031:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:01,036:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:01,037:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:21:01,199:INFO:Initializing predict_model()
+2023-06-12 02:21:01,199:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6A4B810>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6A5FEC0>)
+2023-06-12 02:21:01,200:INFO:Checking exceptions
+2023-06-12 02:21:01,200:INFO:Preloading libraries
+2023-06-12 02:21:01,200:INFO:Set up data.
+2023-06-12 02:21:01,207:INFO:Set up index.
+2023-06-12 02:21:13,098:INFO:Initializing load_model()
+2023-06-12 02:21:13,098:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:21:13,099:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:13,100:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:13,106:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:13,106:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:21:13,267:INFO:Initializing predict_model()
+2023-06-12 02:21:13,267:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A499640710>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AB44A0>)
+2023-06-12 02:21:13,267:INFO:Checking exceptions
+2023-06-12 02:21:13,267:INFO:Preloading libraries
+2023-06-12 02:21:13,268:INFO:Set up data.
+2023-06-12 02:21:13,275:INFO:Set up index.
+2023-06-12 02:21:31,049:INFO:Initializing load_model()
+2023-06-12 02:21:31,050:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:21:31,050:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:31,053:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:31,059:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:21:31,061:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:21:31,236:INFO:Initializing predict_model()
+2023-06-12 02:21:31,236:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6B502D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6B0ADE0>)
+2023-06-12 02:21:31,236:INFO:Checking exceptions
+2023-06-12 02:21:31,236:INFO:Preloading libraries
+2023-06-12 02:21:31,236:INFO:Set up data.
+2023-06-12 02:21:31,244:INFO:Set up index.
+2023-06-12 02:29:14,615:INFO:Initializing interpret_model()
+2023-06-12 02:29:14,616:INFO:interpret_model(estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0))),
+                ('actual_estimator',
+                 LogisticRegression(C=1.0, class_weight=None, dual=False,
+                                    fit_intercept=True, intercept_scaling=1,
+                                    l1_ratio=None, max_iter=1000,
+                                    multi_class='auto', n_jobs=None,
+                                    penalty='l2', random_state=123,
+                                    solver='lbfgs', tol=0.0001, verbose=0,
+                                    warm_start=False))],
+         verbose=False), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000026D52098760>)
+2023-06-12 02:29:14,616:INFO:Checking exceptions
+2023-06-12 02:29:14,617:INFO:Soft dependency imported: shap: 0.41.0
+2023-06-12 02:30:49,158:INFO:Soft dependency imported: explainerdashboard: 0.4.2.2
+2023-06-12 02:36:47,339:WARNING:c:\Users\user\Anaconda3\lib\site-packages\pycaret\internal\pipeline.py:319: UserWarning:
+
+Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+
+
+2023-06-12 02:39:06,159:INFO:Initializing load_model()
+2023-06-12 02:39:06,159:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:39:06,160:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:06,160:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:06,168:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:06,168:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:39:06,335:INFO:Initializing predict_model()
+2023-06-12 02:39:06,335:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6B4A5D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AF1C60>)
+2023-06-12 02:39:06,335:INFO:Checking exceptions
+2023-06-12 02:39:06,335:INFO:Preloading libraries
+2023-06-12 02:39:06,336:INFO:Set up data.
+2023-06-12 02:39:06,344:INFO:Set up index.
+2023-06-12 02:39:45,941:INFO:Initializing load_model()
+2023-06-12 02:39:45,941:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:39:45,942:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:45,943:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:45,951:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:39:45,952:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:39:46,109:INFO:Initializing predict_model()
+2023-06-12 02:39:46,109:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6AE6610>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AE1DA0>)
+2023-06-12 02:39:46,109:INFO:Checking exceptions
+2023-06-12 02:39:46,109:INFO:Preloading libraries
+2023-06-12 02:39:46,109:INFO:Set up data.
+2023-06-12 02:39:46,116:INFO:Set up index.
+2023-06-12 02:42:34,115:INFO:Initializing load_model()
+2023-06-12 02:42:34,116:INFO:load_model(model_name=Final_ET_Model_12June2023, platform=None, authentication=None, verbose=True)
+2023-06-12 02:42:34,116:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:42:34,117:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:42:34,125:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:318: UserWarning: Trying to unpickle estimator LogisticRegression from version 1.2.1 when using version 1.2.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-06-12 02:42:34,126:WARNING:C:\Users\user\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.5.0', 'pycaret': '3.0.0', 'IPython': '8.13.2', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.24.2', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.28.2', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.11.2', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.22.3', 'pandas': '1.5.3', 'jinja2': '3.0.0', 'scipy': '1.9.3', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.6.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.14.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.18.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+  warnings.warn(
+
+2023-06-12 02:42:34,296:INFO:Initializing predict_model()
+2023-06-12 02:42:34,297:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002A4B6B2C0D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['Patient_Age',
+                                             'Pain_Duration_Days',
+                                             'EPT_duration_before_anaesthesia_seconds',
+                                             'Cold_Test_Pain_Duration_before_anaesthesia_seconds',
+                                             'Cold_test...
+dtype: int64},
+                                                                        {'col': 'PDL_Ligament_involvement',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': No     0
+Yes    1
+NaN   -1
+dtype: int64},
+                                                                        {'col': 'Lamina_Dura',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Intact    0
+Loss      1
+NaN      -1
+dtype: int64},
+                                                                        {'col': 'local_Anesthetic',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Mandible    0
+Maxilla     1
+NaN        -1
+dtype: int64}]))),
+                ('actual_estimator',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000002A4B6AF14E0>)
+2023-06-12 02:42:34,297:INFO:Checking exceptions
+2023-06-12 02:42:34,297:INFO:Preloading libraries
+2023-06-12 02:42:34,298:INFO:Set up data.
+2023-06-12 02:42:34,305:INFO:Set up index.
