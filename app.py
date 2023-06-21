@@ -144,6 +144,7 @@ with st.container():
         #st.dataframe(new_prediction)
         st.write("#### Necessity for Supplement (Prediction): ", df['prediction_label'][0])
         st.write("#### Prediction Probability Score: ", df['prediction_score'][0])
+        
         #st.write(df)
 
 with st.container():
