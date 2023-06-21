@@ -41,32 +41,32 @@ tabs_font_css = """
 
 div[class*="stMultiSelect"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 
 div[class*="stSlider"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 
 div[class*="stRadio"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 
 div[class*="stSelectbox"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 
 div[class*="stTextInput"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 
 div[class*="stNumberInput"] label p {
   font-weight:bold;
-  color: white;
+  color: blue;
 }
 </style>
 """
