@@ -4,7 +4,7 @@ from datetime import datetime
 import calendar
 import pandas as pd
 from pycaret.classification import *
-from ydata_profiling import ProfileReport
+from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 # import database as db
 import database as db  # local import
