@@ -87,7 +87,7 @@ with st.container():
     # --- Form Input ---
   with st.form("entry_form", clear_on_submit=True):
           with st.expander("Patient Information"):
-                patient_name = st.text_input("Name of the Patient")
+                #patient_name = st.text_input("Name of the Patient")
                 reg_no = st.text_input("Registration No.")
                 Patient_Gender = st.radio("Gender", options=("Male","Female"), horizontal=True)
                 Patient_Age = st.slider('Age', 0, 100,step=1)
@@ -162,20 +162,4 @@ with st.container():
                           Cold_test_VAS_Score_Before_anaesthesia,Clinical_Pain_VAS_Score,Mobility,Medical_History,
                           EPT_current_pass,EPT_VAS_before_anaesthesia,periodontal_space,PDL_Ligament_involvement,
                           Lamina_Dura,local_Anesthetic,prediction_label,ground_truth)
-    #st.write(df)
-                  
-     
-
-
-      
-
-      
-            
-      
-      
-      
-
-      
-
-      
-       
+    #st.write(df)  
