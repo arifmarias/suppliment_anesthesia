@@ -34,6 +34,9 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
+            p {
+            text-align: justify;
+            }
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
@@ -72,7 +75,7 @@ div[class*="stNumberInput"] label p {
 </style>
 """
 st.write(tabs_font_css, unsafe_allow_html=True)
-st.write("Idea and Implementation: :blue[Dr. Md Abu Saeed Ibn Harun], Mohammed Arif")
+#st.write("Idea and Implementation: :blue[Dr. Md Abu Saeed Ibn Harun], Mohammed Arif")
 st.markdown("""---""")
 # --- DROP DOWN VALUES FOR SELECTING THE PERIOD ---
 years = [datetime.today().year, datetime.today().year + 1]
@@ -164,3 +167,11 @@ with st.container():
                           EPT_current_pass,EPT_VAS_before_anaesthesia,periodontal_space,PDL_Ligament_involvement,
                           Lamina_Dura,local_Anesthetic,prediction_label,ground_truth)
     #st.write(df)  
+
+
+st.write("This is the beta version of Software 2023")
+st.write("© 2023 Dr. Md. Abu Saeed Ibn Harun and Mohammad Arif")
+st.write("All rights reserved. No part of this software are reproduced, stored in a retrieval system, \
+         or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording.  This software are made from clinical research those are ethical cleared from IRB of Chattagram International Medical College ( no. CIMC/IRB/01/21-02).")
+st.write("There are no any conflict of interest or hidden monetization efforts. It is totally free in use.")
+st.write("The right of Dr. Md. Abu Saeed Ibn Harun & Mohammad Arif to be identified as the owners of this software.")
