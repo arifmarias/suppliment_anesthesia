@@ -23,7 +23,7 @@ customized_button = st.markdown("""
         color:#ffffff;
     }
     div.stButton > button:hover {
-        background-color: #00128a;
+        background-color: #578a00;
         color:#ffffff;
         }
     </style>""", unsafe_allow_html=True)
