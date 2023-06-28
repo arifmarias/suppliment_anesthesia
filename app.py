@@ -167,7 +167,7 @@ with st.container():
 
 
 st.write("This is the beta version of Software 2023")
-st.write("© 2023 Dr. Md. Abu Saeed Ibn Harun and Mohammad Arif")
+st.write("**© 2023 Dr. Md. Abu Saeed Ibn Harun and Mohammad Arif**")
 st.write("All rights reserved. No part of this software are reproduced, stored in a retrieval system, \
          or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording.  This software are made from clinical research those are ethical cleared from IRB of Chattagram International Medical College ( no. CIMC/IRB/01/21-02).")
 st.write("There are no any conflict of interest or hidden monetization efforts. It is totally free in use.")
